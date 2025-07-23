@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content=""/>
+    <title>Moodboard Studio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="stylesheet" href="StyleContact.css"/>
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo"><a href="#"><img src="./img/logo/Moodboard-logo(vb).png" alt=""></a></div>
+            <ul class="links">
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="./about.html">A propos</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+
+        <div class="horizontal-line"></div>
+
+           <div class="toggle-btn">
+             <i class="fa-solid fa-bars"></i>
+           </div>
+        
+        <div class="dropdown-menu">
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="./about.html">A propos</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+        </div>
+    </div>
+
+    <main>
+        <section class="contact">
+           <div class="container">
+            <div class="left">
+                <div class="form-wrapper">
+                    <div class="contact-heading">
+                        <h1>Contactez-moi,</h1>
+                        <h2>Et transformons votre vision en réalité créative</h2>
+                    </div>
+                    <form action="index.html" method="post" class="contact-form">
+                      <div class="input-wrap">
+                        <input class="contact-input" autocomplete="off" ,name="First Name" type="text" required>
+                        <label>First Name</label>
+                      </div>
+
+                      <div class="input-wrap">
+                        <input class="contact-input" autocomplete="off" ,name="Last Name" type="text" required>
+                        <label>Last Name</label>
+                      </div>
+
+                      <div class="input-wrap w-100">
+                        <input class="contact-input" autocomplete="off" ,name="Email" type="text" required>
+                        <label>Email</label>
+                      </div>
+
+                      <div class="input-wrap textarea w-100">
+                       <textarea name="Message" autocomplete="off" class="contact-input" required></textarea>
+                        <label>Message</label>
+                      </div>
+
+                      <div class="contact-button w-100">
+                        <input type="submit" value="Envoyer" class="btn">
+                      </div>
+                    </form>
+                </div>
+            </div>
+            <div class="right">
+                <div class="image-wrapper">
+                    <img src="./img/bureau 2.jpeg" class="img">
+                </div>
+            </div>
+           </div>
+        </section>
+        <footer class="footer">
+              <a href="./index.html">
+                 <img src="./img/logo/Moodboard-logo(vn).png" alt="Moodboard Studio Logo">
+              </a>
+            <div class="separator"></div>
+            <ul class="menu">
+                 <li class="menu-elem">
+                      <a href="./index.html" class="menu-icon">Accueil</a>
+                  </li>
+                    <li class="menu-elem">
+                      <a href="./A propos.html" class="menu-icon">À Propos</a>
+                   </li>
+                   <li class="menu-elem">
+                      <a href="./portfolio.html" class="menu-icon">Portfolio</a>
+                   </li>
+                   <li class="menu-elem">
+                      <a href="./contact.html" class="menu-icon">Contact</a>
+                  </li>
+            </ul>
+        </footer>
+    </main>
+  <script src="app.js"></script>
+</body>
+</html>

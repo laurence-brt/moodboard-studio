@@ -1,0 +1,120 @@
+
+     
+     <!-- Section À propos -->
+    <section class="about-section">
+        <div class="about-section-left">
+            <div class="about-img"></div>
+            <img src="/img/Mon portrait.jpg" alt="">
+        </div>
+        <div class="about-section-right">
+            <div class="inner-container"> 
+                <p>"Chaque expérience numérique est une réponse à un besoin caché, une quête d’harmonie entre l’esthétique, la simplicité et l’impact."</p>   
+    </section>
+   
+    <div class="container-scroll">
+        <h2><span> Mes</span><span>Services</span></h2>
+        <div class="imgwrap">
+            <div class="img">
+                <div class="overlay"></div>
+                <img src="" alt="">
+                <a href="#">Identité Visuelle</a>
+            </div>
+             <div class="img">
+                <div class="overlay"></div>
+                <img src="" alt="">
+                <a href="#">Idée Moodboard</a>
+            </div>
+              <div class="img">
+                <div class="overlay"></div>
+                <img src="" alt="">
+                <a href="#">Branding & Packaging</a>
+            </div>
+        </div>
+     </div>
+     <div class="wrap">
+        <h2><span> Mes</span><span>projets</span></h2>
+        <div class="slider">
+            <img src="./img/creat-2.jpg" alt="">
+            <img src="./img/creat-1.jpg" alt="">
+            <img src="./img/creat-3.jpg" alt="">
+            <img src="" alt="">
+            <img src="" alt="">    
+        </div>
+     </div>
+
+     <!--Infinity marquee-->
+
+     <!--Scrolltrigger animation-->
+
+    <footer class="footer">
+    
+            <a href="./index.html">
+                 <img src="./img/logo/Moodboard-logo(vn).png" alt="Moodboard Studio Logo">
+            </a>
+    <div class="separator"></div>
+    <ul class="menu">
+        <li class="menu-elem">
+            <a href="./index.html" class="menu-icon">Accueil</a>
+        </li>
+        <li class="menu-elem">
+            <a href="./A propos.html" class="menu-icon">À Propos</a>
+        </li>
+        <li class="menu-elem">
+            <a href="./portfolio.html" class="menu-icon">Portfolio</a>
+        </li>
+        <li class="menu-elem">
+            <a href="./contact.html" class="menu-icon">Contact</a>
+        </li>
+    </ul>
+</footer>
+            
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script> 
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" ></script>
+          <script src="./script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        const timeline = gsap.timeline(); 
+timeline.from ('.img',1,{
+    y:-100,
+    opacity:0,
+    stagger:.2  
+})
+
+gsap.timeline({
+    scrollTrigger:{
+        trigger:'.container',
+        start:'top top',
+        scrub:1
+    }
+})
+.to('.overlay' ,{
+    height: "110%" ,ease:Expo.easeOut
+}, 'start')
+.to('.img',{
+    boxShadow:"0px 0px 0px #000" ,ease:Expo.ease},'start')
+
+    gsap.timeline({
+        scrollTrigger:{
+        trigger:'.wrap',
+        scrub:8  
+    }
+})
+.to('.slider' ,1,{
+    x:innerWidth * -1
+})
+
+
+
+ 

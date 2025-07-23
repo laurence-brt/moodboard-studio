@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;900&display=swap");
+       * {    
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+         .split-screen{
+            display: flex;
+        }
+
+        .left-text{
+            background: #A47764;
+            height: 100vh;
+            width: 50%;
+        }
+
+        .right-img{
+            background: url('./img/Projet_1/creat-Festival-Afro-caribbean.jpg');
+            background-size: cover;
+            background-position: center;
+            width: 50%;
+            height: 100vh;
+        }
+
+        .left-text h1{
+            margin-top: 35%;
+            margin-left:12%;
+            color: #fff;
+            font-size: 2.5rem;
+            font-weight: 200;
+            line-height: 1.2;
+        }  
+
+        p{
+            margin-top: 35px;
+            font-size: 19px;
+            line-height: 30px;
+        }
+
+      .description {
+            color: white;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .tagline {
+            color: white;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .services {
+            display: flex;
+            gap: 15px;
+            bottom: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .service-tag {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .service-tag:nth-child(1)::before {
+            content: "🎨 ";
+            margin-right: 5px;
+        }
+
+        .service-tag:nth-child(2)::before {
+            content: "💻 ";
+            border-bottom: 5px;
+        }
+
+        .service-tag:nth-child(3)::before {
+            content: "🎭 ";
+            margin-right: 5px;
+        }
+        .navbar{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            padding: 2.5em 1.5em;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 1000;
+            background-color: #A47764;
+        }
+
+        li{
+            list-style: none;
+        }
+
+        .links {
+            display: flex;
+            gap: 2em;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-weight: 400;
+            transition: opacity 0.3s ease;
+        }
+
+        
+        .links a:hover {
+            opacity: 0.7;
+        }
+
+        .horizontal-line {
+            position: absolute;
+            left: 0;
+            top: 138px;
+            width: 100%;
+            border-bottom: 3px solid rgb(255, 255, 255);
+        }
+
+        .toggle-btn{
+            color: #fff;
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: none;
+        }
+
+ /*Dropdown menu*/
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 102%;
+            width: 100%;
+            margin-left: -22px;
+            background: rgba(164, 119, 100, 0.8);
+            backdrop-filter: blur(10px);
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+            border-radius: 0 0 10px 10px;
+            transition: height 0.3s ease;
+        }
+
+        .dropdown-menu.open {
+            display: flex;
+            height: auto;
+            padding: 1rem 0;
+        }
+
+        .dropdown-menu li {
+            list-style: none;
+            margin: 1rem 0;
+        }
+
+        .dropdown-menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500; transition: opacity 0.3s ease;
+        }
+
+        .dropdown-menu a:hover{
+              opacity: 0.7;
+         }
+        
+
+/* Responsive */
+    @media (max-width: 992px) {
+        .links {
+            display: none;
+        }
+
+        .toggle-btn {
+            display: block;
+        }
+
+    @media (max-width:768px){
+        .split-screen{
+            margin-top: 100px;
+        }
+
+        #welcome-title{
+            font-size: 2rem;
+        }
+    }
+}
+
+/*Infinity marquee*/
+
+        .text-wrapper{
+            display: flex;
+            justify-content: flex-start;
+            background: #fbfbfb;
+            overflow: hidden;
+        }
+
+        .text-wrapper h3{
+            border-radius: 6px;
+            flex-shrink: 0;
+            font-size: 38px;
+            justify-content: space-between;
+            align-items: center;
+            text-transform: uppercase;
+            color: #262626;
+            white-space: nowrap;
+            padding: 0 11rem;
+            letter-spacing: 1px;
+            animation: move-rtl 6000ms linear infinite;
+        }
+
+    @keyframes move-rtl{
+            0%{
+                transform: translateX(0);
+            }
+            100%{
+                transform: translateX(-100%);
+            }
+        }   
+
+/*about-section*/
+
+        .about-section{
+             display: flex;
+            min-height: 60vh;
+        }
+
+
+        .about-section-left {
+            background-color: #f0dbce;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .about-section-left img {
+            height: 400px;
+            width: 260px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+
+        .about-section-right {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+         .imgwrap{
+            width: 100%;
+            display:flex;
+            height: 80vh;
+            align-items:flex-end;
+            
+        }
+
+        .imgwrap .img{
+            width: 100%;
+            height: 100%;
+            margin: 0px 30px;
+            position: relative;
+            overflow:hidden;
+            box-shadow:0px 0px 30px #000;   
+        }
