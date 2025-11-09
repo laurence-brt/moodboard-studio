@@ -7,91 +7,8 @@
 
         body {
             font-family: "Inter", sans-serif;
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
         }
-
-         .split-screen{
-            display: flex;
-        }
-
-        .left-text{
-            background: #A47764;
-            height: 100vh;
-            width: 50%;
-        }
-
-        .right-img{
-            background: url('./img/creat-Festival-Afro-caribbean.jpg');
-            background-size: cover;
-            background-position: center;
-            width: 50%;
-            height: 100vh;
-        }
-
-        .left-text h1{
-            margin-top: 35%;
-            margin-left:12%;
-            color: #fff;
-            font-size: 2.5rem;
-            font-weight: 200;
-            line-height: 1.2;
-        }  
-
-        p{
-            margin-top: 35px;
-            font-size: 19px;
-            line-height: 30px;
-        }
-
-      .description {
-            color: white;
-            font-size: 18px;
-            line-height: 1.6;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-
-        .tagline {
-            color: white;
-            font-size: 16px;
-            line-height: 1.6;
-            margin-bottom: 40px;
-            font-style: italic;
-            text-align: center;
-        }
-
-        .services {
-            display: flex;
-            gap: 15px;
-            bottom: 30px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .service-tag {
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            padding: 8px 15px;
-            border-radius: 20px;
-            font-size: 14px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            backdrop-filter: blur(10px);
-        }
-
-        .service-tag:nth-child(1)::before {
-            content: "🎨 ";
-            margin-right: 5px;
-        }
-
-        .service-tag:nth-child(2)::before {
-            content: "💻 ";
-            border-bottom: 5px;
-        }
-
-        .service-tag:nth-child(3)::before {
-            content: "🎭 ";
-            margin-right: 5px;
-        }
+    
         .navbar{
             position: fixed;
             top: 0;
@@ -189,14 +106,13 @@
 
    
 }
-
         .about-section{
-             display: flex;
+            display: flex;
             min-height: 100vh;
         }
 
 
-    .about-section-left {
+         .about-section-left {
             background-color: #f0dbce;
             width: 50%;
             display: flex;
@@ -214,57 +130,36 @@
         }
 
         .about-section-right {
-            width: 50%;
+            width: 70%;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
+            gap: 120px;
             padding: 2rem;
         }
 
-        .columns{
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: center;
-            margin: 5px 0 ;
+        .inner-container{
+             flex: 1;
+             min-width: 280px;
+             font-size: 1.1rem;
+             line-height: 1.7;
         }
 
-        .column{
-            flex:1;
-            border: 1px solid #666;
-            margin: 2px;
-            padding: 10px;
+        h2{
+            font-weight: normal;
         }
 
-        .column:first-child{
-            margin-left:0;
+        h2 span{
+            font-family: "great vibes";
+            font-size: 50px;
+            
         }
 
-        .h2{
-            text-align: center;
-            font-size: 1.5em;
-        }
+   
+        
 
-        .h3{
-            font-size:1em;
-            margin-left: 2em;
-        }
-       
-        .bar-scroll{
-            width: 600px;
-        }
-
-        .progress-bar{
-            background-image:linear-gradient(#f0dbce, #A47764);
-            height: 30px;
-            border-radius: 50px;
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-top: 1em;
-            background-size: 200% 200%;
-            animation: animate 10s ease-in infinite;
-        }
+        
+      
 
         @keyframes animate{
             0%{
@@ -282,53 +177,72 @@
             .bar-container{
                 width: 90%;
             }
-            h2{
-                font-size: 1.2em;
+
+            .about-section-right{
+                margin-top: 80px;
+
             }
+           
+
         }
 
-         .footer{
-            position: relative;
-            width: 100%;
-            background: #A47764;
-            min-height: 100px;
-            padding: 20px 50px;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        .menu{
-            display: flex;
-            justify-content: center;
-            position: relative;
-            align-items: center;
-            margin: 10px 0;
-            flex-wrap:wrap;
-        }
-
-        .menu-elem{
-            list-style: none;
-        }
-
-        .menu-icon{
-            color: #000;
-            font-size: 20px;
+        .btn{
+            background: linear-gradient(#f0dbce, #A47764);
             display: inline-block;
+            padding: 12px 30px;
+            color: #fff;
+            left: 40px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
             text-decoration: none;
-            margin: 5px 10px;
-            opacity: 0.5;
-            transition: 0.3s;
+            font-weight: bold;
+            transition: all 0.3s linear;  
         }
 
-        .menu-icon:hover{
-            opacity: 1;
+        
+
+        .footer{
+        position: relative;
+        width: 100%;
+        background: #A47764;
+        min-height: 100px;
+        padding: 20px 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         }
 
-        .text{
-            color: #000;
-            text-align: center;
-            margin-top: 15px;
-            margin-bottom: 10px;
-            font-size: 20px;
+        .footer img{
+            max-width: 200px;
         }
+
+
+
+
+
+
+
+
+
+        .festival-container {
+  display: flex;
+  align-items: center;   /* aligne verticalement */
+  gap: 2rem;            /* espace entre l’image et le texte */
+  max-width: 1000px;
+  margin: 0 auto;       /* centre le bloc */
+}
+
+.festival-container img {
+  width: 300px;         /* ajuste la taille de ton image */
+  border-radius: 10px;
+}
+
+.festival-text {
+  flex: 1;              /* prend l’espace restant */
+}
+
+.festival-text h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}

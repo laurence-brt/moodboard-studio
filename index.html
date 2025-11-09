@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-https://github.com/moodboard-studio/moodboard-studio.git<html lang="fr">
+<html lang="fr">
 <head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -7,90 +7,290 @@ https://github.com/moodboard-studio/moodboard-studio.git<html lang="fr">
     <meta name="description" content=""/>
     <title>Moodboard Studio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
     <link rel="stylesheet" href="style.css"/>
 
 </head>
 
+
 <body>
-    <div class="navbar">
-        <div class="logo"><a href="#"><img src="./img/logo/Moodboard-logo(vb).png" alt=""></a></div>
-            <ul class="links">
-                <li><a href="./index.html">Accueil</a></li>
-                <li><a href="./about.html">A propos</a></li>
-                <li><a href="./portfolio.html">Portfolio</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-
-        <div class="horizontal-line"></div>
-
-           <div class="toggle-btn">
-             <i class="fa-solid fa-bars"></i>
-           </div>
-        
-        <div class="dropdown-menu">
-                <li><a href="./index.html">Accueil</a></li>
-                <li><a href="./about.html">A propos</a></li>
-                <li><a href="./portfolio.html">Portfolio</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+    <nav class="navbar">
+        <div class="logo">
+         <a href="index.html"><img src="./img/logo/Logo_MOODBOARD_Studio_marron.png" alt="Moodboard Studio"></a>
         </div>
-    </div>
-
-    <section class="split-screen">
-            <div class="left-text"> 
-                 <h1 id="welcome-title">Bienvenue chez MOODBOARD<i> Studio</i></h1>
-                  <p class="description">
-                    Un studio créatif à taille humaine, né d'une passion : transformer vos idées en visuels qui ont du sens.
-                  </p>
-            
-                  <p class="tagline">
-                    Design intuitif, identité sur mesure, approche sincère — chaque projet est une histoire que l'on écrit ensemble.
-                  </p>
-                  <div class="services">
-                   <span class="service-tag">Design Graphique</span>
-                   <span class="service-tag">Développement Web</span>
-                   <span class="service-tag">Branding</span>
-                  </div> 
-            </div>    
-
-            <div class="right-img"></div>            
-     </section> 
-
-      <div class="text-wrapper">
-            <h3>Web Designer</h3>
-         <h3>UX /UI Designer</h3>
-         <h3>Brand Designer</h3>
-         <h3>Web Designer</h3>
-         <h3>UX /UI Designer</h3>
-         <h3>Brand Designer</h3>
-     </div>
-
-<!-- Section À propos -->
-    <section class="about-section">
-        <div class="about-section-left">
-            <div class="about-img"></div>
-            <img src="/img/Mon portrait.jpg" alt="">
+        <div class="togglebtn" id="toggleBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          
         </div>
-        <div class="about-section-right">
-            <div class="inner-container"> 
-                <p>"Chaque expérience numérique est une réponse à un besoin caché, une quête d’harmonie entre l’esthétique, la simplicité et l’impact."</p>   
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">ACCUEIL</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="portfolio.html">PORTFOLIO</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero-slider">
+        <!-- Slide 1 -->
+        <div class="slide slide-1 active">
+            <div class="slide-image">
+                <img src="./img/Picture_ 1.jpeg" alt="moodboard">
+            </div>
+            <div class="slide-content">
+                <div class="slide-number">01</div>
+                <h1>Branding<br>& Design</h1>
+                <p>Nous créons des identités visuelles uniques qui captivent et inspirent votre audience.</p>
+               <a href="services.html" class="portfolio-btn">
+                     <span>Découvrir</span>
+                     <span class="portfolio-btn-arrow">→</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide slide-2">
+            <div class="slide-image">
+                <img src="./img/picture_2.jpeg" alt="web design">
+            </div>
+            <div class="slide-content">
+                <div class="slide-number">02</div>
+                <h1>Web<br>Design</h1>
+                <p>Des sites web modernes et performants qui transforment vos visiteurs en clients fidèles.</p>
+                <a href="services.html" class="portfolio-btn">
+                    <span>Explorer</span>
+                    <span class="portfolio-btn-arrow">→</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide slide-3">
+            <div class="slide-image">
+                <img src="./img/picture_3.jpeg" alt="Création">
+            </div>
+            <div class="slide-content">
+                <div class="slide-number">03</div>
+                <h1>Création<br>de Contenu</h1>
+                <p>Des visuels percutants qui racontent l'histoire unique de votre marque avec style.</p>
+                <a href="services.html" class="portfolio-btn">
+                    <span>Voir plus</span>
+                    <span class="portfolio-btn-arrow">→</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <div class="slider-nav">
+            <div class="slider-arrow up" id="prevSlide"></div>
+            <div class="slider-arrow down" id="nextSlide"></div>
+        </div>
+
+        <!-- Dots Navigation -->
+        <div class="slider-dots">
+            <div class="dot active" data-slide="1"></div>
+            <div class="dot" data-slide="2"></div>
+            <div class="dot" data-slide="3"></div>
+        </div>
     </section>
 
-     <div class="wrap">
-        <h2><span> Mes</span><span>projets</span></h2>
-        <div class="slider">
-            <img src="./img/creat-Saveurs-Bouchères.png" alt="">
-            <img src="./img/Projet_1/creat-Festival-Afro-caribbean.jpg" alt="">
-            <img src="./img/creat-3.jpg" alt="">
-            <img src="" alt="">
-            <img src="" alt="">    
+    <section class="logos-section">
+        <div class="logos-grid">
+            <div class="logo-item">WEB DESIGNER</div>
+            <div class="logo-item">UX /UI DESIGNER</div>
+            <div class="logo-item">BRAND DESIGNER</div>
         </div>
-     </div>
+    </section>
 
- 
+    <section class="intro-section">
+        <div class="intro-content">
+            <h2>Studio créatif spécialisé en branding & design</h2>
+            <p>Nous donnons vie à votre identité visuelle et faisons rayonner votre marque avec style et impact.</p>
+            <p>Notre équipe transforme vos idées en marques iconiques qui captivent votre audience et renforcent votre présence sur le marché.</p>
+        </div>
+        <div class="image-grid">
+            <div class="image-box"><img src="./img/image00.png"></div>
+            <div class="image-box all"><img src="./img/image_02.png"></div>
+            <div class="image-box"><img src="./img/image_03.png"></div>
+        </div>
+    </section>
 
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script> 
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" ></script>
-          <script src="./script.js"></script>
+    <section class="services-section" id="services">
+        <h2 class="section-title">Transformer les défis en opportunités</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                  <img src="./img/Picture_01.png">
+                </div>
+                <h3>Web Design</h3>
+                <p>Nous concevons des sites web modernes, élégants et performants qui reflètent l'essence de votre marque. Chaque détail est pensé pour captiver vos visiteurs.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                  <img src="./img/Picture_02.png" alt="">
+                </div>
+                <h3>Branding</h3>
+                <p>Nous créons une identité visuelle forte, cohérente et alignée à votre vision. Du logo à l'univers graphique complet, votre marque se démarque.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                  <img src="./img/Picture_03.png" alt="">
+                </div>
+                <h3>Création de Contenu</h3>
+                <p>Des contenus visuels percutants qui racontent l'histoire de votre marque et captent l'attention de votre audience sur tous les supports digitaux.</p>
+            </div>
+        </div>
+    </section>
 
+    <section class="quote-section">
+        <blockquote>
+            "Un bon branding ne dit pas seulement qui vous êtes,<br>
+            il fait ressentir pourquoi vous comptez."
+        </blockquote>
+    </section>
+
+    <section class="portfolio-section" id="portfolio">
+        <h2 class="section-title">Notre portfolio murmure ce que les mots ne sauraient dire</h2>
+        
+        <div class="portfolio-slider-wrapper">
+            <button class="slider-nav-btn prev" id="prevBtn">‹</button>
+            
+            <div class="portfolio-cards" id="portfolioCards">
+                <!-- Card 1 -->
+                <div class="portfolio-card">
+                    <img src="https://images.unsplash.com/photo-1634942537034-2531766767d1?w=400&h=600&fit=crop" alt="Valentine" class="card-image">
+                    <div class="card-overlay">
+                        <div class="card-name">VALENTINE</div>
+                        <div class="card-category">Branding</div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="portfolio-card">
+                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&h=600&fit=crop" alt="Samite" class="card-image">
+                    <div class="card-overlay">
+                        <div class="card-name">SAMITE</div>
+                        <div class="card-category">Identité Visuelle</div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="portfolio-card">
+                    <img src="https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=400&h=600&fit=crop" alt="Hashi" class="card-image">
+                    <div class="card-overlay">
+                        <div class="card-name">HASHI</div>
+                        <div class="card-category">Web Design</div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="portfolio-card">
+                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=600&fit=crop" alt="Kaity" class="card-image">
+                    <div class="card-overlay">
+                        <div class="card-name">KAITY</div>
+                        <div class="card-category">Branding</div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="portfolio-card">
+                    <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=400&h=600&fit=crop" alt="Lauren" class="card-image">
+                    <div class="card-overlay">
+                        <div class="card-name">LAUREN</div>
+                        <div class="card-category">Packaging</div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="portfolio-card">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=600&fit=crop" alt="Ryan" class="card-image">
+                    <div class="card-overlay">
+                        <div class="card-name">RYAN</div>
+                        <div class="card-category">Digital</div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="portfolio-card">
+                    <img src="https://images.unsplash.com/photo-1558655146-364adaf1fcc9?w=400&h=600&fit=crop" alt="Mike" class="card-image">
+                    <div class="card-overlay">
+                        <div class="card-name">MIKE</div>
+                        <div class="card-category">Branding</div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="portfolio-card">
+                    <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=400&h=600&fit=crop" alt="Alex" class="card-image">
+                    <div class="card-overlay">
+                        <div class="card-name">ALEX</div>
+                        <div class="card-category">Design</div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="slider-nav-btn next" id="nextBtn">›</button>
+        </div>
+
+        <a href="services.html" class="portfolio-btn">
+            <span>Voir tous les projets</span>
+            <span class="portfolio-btn-arrow">→</span>
+        </a>
+    </section>
+
+    <section class="cta-section" id="contact">
+        <h2>De la vision au succès</h2>
+        <p>Nous vous accompagnons dans la construction d'une entreprise forte et durable</p>
+         <a href="services.html" class="portfolio-btn">
+                    <span>COMMENCER VOTRE PROJET</span>
+                    <span class="portfolio-btn-arrow">→</span>
+                </a>
+    </section>
+
+     <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo & Tagline -->
+            <div class="footer-logo">
+                <div class="footer-img-logo">
+                        <a href="index.html"><img src="./img/logo/Logo_MOODBOARD_Studio_marron.png" alt="Moodboard Studio"></a>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="./services.html">Services</a></li> | 
+                    <li><a href="./portfolio.html">Portfolio</a></li> | 
+                    <li><a href="./contact.html">Contact</a></li> 
+                </ul>
+            </nav>
+
+            <!-- Contact Info -->
+            <div class="footer-contact">
+                <a href="mailto:contact@mooboard.studio">contact@mooboard.studio</a>
+                <p class="footer-location">Martinique</p>
+            </div>
+    
+
+          <script src="script.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+          
