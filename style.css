@@ -492,7 +492,7 @@
             padding: 20px 0;
         }
 
-        /* PORTFOLIO CARD - TRÈS FINE */
+        /* PORTFOLIO CARD*/
         .portfolio-card {
             min-width: 150px;
             width: 150px;
@@ -621,7 +621,7 @@
         .view-all-btn {
             display: inline-block;
             padding: 18px 50px;
-            background: linear-gradient(135deg, #A47864, #8d6a52);
+            background: linear-gradient(135deg, #A47864, #8d6a52 );
             color: white;
             text-decoration: none;
             border-radius: 50px;
@@ -894,7 +894,7 @@
             }
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 875px) {
             .togglebtn {
                 display: block;
             }

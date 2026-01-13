@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content=""/>
+    <title>Page_projet_portfolio_Cognitive_Balance</title>
+    <link rel="stylesheet" href="projet_portfolio_Cognitive_Balance.css"/>
+
+</head>
+
+<body>
+     <nav class="navbar">
+        <div class="logo">
+         <a href="index.html"><img src="./img/logo/Logo_MOODBOARD_Studio_marron.png" alt="Moodboard Studio"></a>
+        </div>
+        <div class="togglebtn" id="toggleBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">ACCUEIL</a></li>
+            <li><a href="A propos.html">A PROPOS</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="portfolio.html">PORTFOLIO</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <article class="projects-showcase" id="portfolio">
+    <header class="showcase-header">
+        <h2 class="showcase-title">Cognitive Balance</h2>
+        <p class="project-type">Design <UX-UI></p>
+    </header>   
+    <!-- Projet 3 - Vidéo avec autoplay -->
+<div class="project-slide">
+    <video src="./video/Application_UX_UI_Cognitive_balance.mov" class="project-media" autoplay muted loop playsinlinepreload="auto"></video>
+   
+      <!-- SECTION 2 : Prototypes alignés -->
+        <section class="prototypes-section">
+            <div class="prototypes-grid">
+                  <div class="prototype-item">
+                    <img src="./img/cognitive balance/Frame_loading.png" alt="Chargement" class="prototype-img">
+                    <p class="prototype-caption">Chargement</p>
+                </div>
+                 <div class="prototype-item">
+                    <img src="./img/cognitive balance/prototype_access_code.png" alt="code d'accès" class="prototype-img">
+                    <p class="prototype-caption">Code d'accès</p>
+                </div>
+                 <div class="prototype-item">
+                    <img src="./img/cognitive balance/prototype_create_account.png" alt="création de compte" class="prototype-img">
+                    <p class="prototype-caption">Création de compte</p>
+                </div>
+                <div class="prototype-item">
+                    <img src="./img/cognitive balance/prototype_log_in.png" alt="Connexion" class="prototype-img">
+                    <p class="prototype-caption">Connexion</p>
+                </div>
+                <div class="prototype-item">
+                    <img src="./img/cognitive balance/Prototype_reset_Password.png" alt="Réinitialisation de mot de passe" class="prototype-img">
+                    <p class="prototype-caption">Réinitialisation de mot de passe</p>
+                </div>
+                 <div class="prototype-item">
+                    <img src="./img/cognitive balance/prototype_scroll.png" alt="scroll" class="prototype-img">
+                    <p class="prototype-caption"> Scroll</p>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- SECTION 4 : Mockup final -->
+        <section class="final-mockup">
+            <div class="mockup-container">
+                <img src="./img/mockup_cognitive_balance.png" alt="Mockup Cognitive Balance" class="mockup-img">
+            </div>
+        </section>
+    </article>
+     <footer>
+        <div class="footer-projects-split">
+            <!-- Projet précédent -->
+            <a href="./projet_Festival_Afro_Caribéen.html" class="footer-project-card left">
+                <div class="project-overlay" data-number="02">
+                    <span class="project-direction">Projet précédent</span>
+                    <h3 class="project-name">Festival Afro-Caribéen</h3>
+                    <p class="project-type">Identité Visuelle Événementielle</p>
+                    <span class="project-arrow">→</span>
+                </div>
+            </a>
+
+            <!-- Projet suivant -->
+            <a href="./Projet_Beauty_Of_Darkness.html" class="footer-project-card right">
+                <div class="project-overlay" data-number="04">
+                    <span class="project-direction">Projet suivant</span>
+                    <h3 class="project-name">Beauty of Darkness</h3>
+                    <p class="project-type">Affiche Cinématographique</p>
+                    <span class="project-arrow">→</span>
+                </div>
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        // Menu hamburger toggle
+        const toggleBtn = document.getElementById('toggleBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        toggleBtn.addEventListener('click', () => {
+            toggleBtn.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                toggleBtn.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,376 @@
+  
+  * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: #F8F8F8;
+            color: #1A1A1A;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+       .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            background-color: #f0ebe6;
+            align-items: center;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo img {
+            width: 250px;
+            height: 100px;
+        }
+
+        .togglebtn {
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            position: relative;
+            display: none;
+        }
+
+        .togglebtn span {
+            position: absolute;
+            width: 30px;
+            height: 2px;
+            background-color: #2c2c2c;
+            left: 0;
+            transition: all 0.3s ease;
+        }
+
+        .togglebtn span:nth-child(1) {
+            top: 0;
+        }
+
+        .togglebtn span:nth-child(2) {
+            top: 15px;
+        }
+
+        .togglebtn span:nth-child(3) {
+            top: 30px;
+        }
+
+        .togglebtn.active span:nth-child(1) {
+            transform: rotate(45deg);
+            top: 15px;
+        }
+
+        .togglebtn.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .togglebtn.active span:nth-child(3) {
+            transform: rotate(-45deg);
+            top: 15px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+            transition: all 0.3s;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #2c2c2c;
+            font-size: 14px;
+            letter-spacing: 1px;
+            transition: opacity 0.3s;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.6;
+        }
+
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* HERO SECTION */
+        .hero-about {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 4rem;
+            padding: 6rem 2rem;
+            background: #FFFFFF;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero-content h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(3rem, 6vw, 5rem);
+            font-weight: 700;
+            color: #1A1A1A;
+            margin-bottom: 1rem;
+            line-height: 1.1;
+        }
+
+        .hero-content .subtitle {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.5rem, 3vw, 2.5rem);
+            font-weight: 400;
+            font-style: italic;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .hero-image {
+            position: relative;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .hero-image img {
+            width: 80%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        /* À PROPOS */
+        .about-section {
+            padding: 5rem 2rem;
+            background: #f0ebe6;
+        }
+
+        .about-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            color: #1A1A1A;
+        }
+
+        .about-content {
+            max-width: 900px;
+            font-size: 1.1rem;
+            line-height: 1.9;
+            color: #333;
+        }
+
+        .about-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .highlight {
+            font-weight: 600;
+            color: #1A1A1A;
+        }
+
+        /* COMPÉTENCES */
+        .skills-section {
+            padding: 5rem 2rem;
+            background: #F8F8F8;
+        }
+
+        .skills-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            color: #1A1A1A;
+            text-align: center;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 3rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .skill-category h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: #1A1A1A;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.8rem 0;
+            font-size: 1rem;
+            color: #333;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .skill-item:last-child {
+            border-bottom: none;
+        }
+
+        .skill-icon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #1A1A1A;
+            color: #FFFFFF;
+            border-radius: 8px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .skill-name {
+            font-weight: 500;
+        }
+
+        /* MES ATOUTS */
+        .atouts-section {
+            padding: 5rem 2rem;
+            background: #f0ebe6;
+        }
+
+        .atouts-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            color: #1A1A1A;
+        }
+
+        .atouts-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .atout-card {
+            background: #F8F8F8;
+            padding: 3rem 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .atout-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .atout-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: #E8E8E8;
+            margin-bottom: 1rem;
+        }
+
+        .atout-card h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1A1A1A;
+            margin-bottom: 1rem;
+        }
+
+        .atout-card p {
+            font-size: 0.95rem;
+            font-weight: 300;
+            color: #666;
+            line-height: 1.7;
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 3rem 2rem;
+            background: #1A1A1A;
+            color: #FFFFFF;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 968px) {
+            .hero-about {
+                grid-template-columns: 1fr;
+                padding: 4rem 2rem;
+            }
+
+            .hero-image {
+                order: -1;
+                max-width: 300px;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .atouts-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 968px) {
+            .hero-about {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-left {
+                padding: 4rem 2rem;
+            }
+
+            .hero-right {
+                min-height: 50vh;
+            }
+
+            .about-section,
+            .strengths-section,
+            .experience-section {
+                padding: 4rem 2rem;
+            }
+
+            .strengths-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .timeline {
+                padding-left: 2rem;
+            }
+
+            .timeline-item {
+                padding-left: 1.5rem;
+            }
+
+            .timeline-item::before {
+                left: -2.5rem;
+            }
+        }

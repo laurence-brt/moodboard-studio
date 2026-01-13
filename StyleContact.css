@@ -441,7 +441,7 @@ textarea.contact-input:not(:placeholder-shown) + label {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 875px)  {
     .togglebtn {
         display: block;
         width: 25px;
