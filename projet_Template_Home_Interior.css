@@ -92,7 +92,7 @@
             opacity: 0.6;
         }
 
-        /* Container pour les mockups flottants */
+        /* mockups flottants */
         .background-mockups {
             position: absolute;
             top: 0;
@@ -105,7 +105,7 @@
 
         .floating-mockup { 
             position: absolute;
-            opacity: 0.15;
+            opacity: 0.35;
             filter: grayscale(30%);
             transition: opacity 0.3s ease;
         }
@@ -418,7 +418,7 @@
             letter-spacing: 0.05em;
         }
 
-        /* LARGE MOCKUP FULL WIDTH */
+        /* LARGE MOCKUP */
         .mockup-full {
             padding: 0;
             background: transparent;
@@ -471,7 +471,7 @@
             color:  #F5F1EA;;
         }
 
-        /* Footer Split Screen Projects - Version Raffinée */
+        /* Footer Split Screen Projects */
         .footer-projects-split {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -479,7 +479,6 @@
             position: relative;
         }
 
-        /* Ligne de séparation centrale */
         .footer-projects-split::before {
             content: '';
             position: absolute;
@@ -615,7 +614,7 @@
             opacity: 1;
         }
 
-        /* Flèche élégante */
+  
         .project-arrow {
             display: inline-block;
             margin-top: 2rem;
