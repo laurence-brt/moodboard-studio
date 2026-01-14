@@ -326,6 +326,10 @@
                 pointer-events: all;
             }
             
+            .navbar {
+                padding: 20px 30px;
+            }
+            
             .hero-about {
                 grid-template-columns: 1fr;
                 padding: 4rem 2rem;
