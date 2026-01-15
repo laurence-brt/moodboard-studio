@@ -2,144 +2,98 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content=""/>
-    <title>portfolio</title>
+    <meta name="description" content="Portfolio Moodboard Studio - Découvrez nos réalisations en branding et design"/>
+    <title>Portfolio - Moodboard Studio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
     <link rel="stylesheet" href="StylePortfolio.css"/>
-
 </head>
 
-
 <body>
+    <!-- NAVIGATION (Pure CSS) -->
     <nav class="navbar">
         <div class="logo">
-         <a href="index.html"><img src="./img/logo/Logo_MOODBOARD_Studio_marron.png" alt="Moodboard Studio"></a>
+            <a href="index.html">
+                <img src="./img/logo/Logo_MOODBOARD_Studio_marron.png" alt="Moodboard Studio">
+            </a>
         </div>
-        <div class="togglebtn" id="toggleBtn">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="togglebtn">
             <span></span>
             <span></span>
             <span></span>
-          
-        </div>
-        <ul class="nav-links" id="navLinks">
+        </label>
+        <ul class="nav-links">
             <li><a href="index.html">ACCUEIL</a></li>
-            <li><a href="A propos.html">A PROPOS</a></li>
+            <li><a href="A propos.html">À PROPOS</a></li>
             <li><a href="services.html">SERVICES</a></li>
             <li><a href="portfolio.html">PORTFOLIO</a></li>
             <li><a href="contact.html">CONTACT</a></li>
         </ul>
     </nav>
 
-  <article class="projects-showcase" id="portfolio">
-    <header class="showcase-title">Portfolio : de l'idée à l'identité visuelle</header>
-    
-    <nav class="slider-container">
-        <button class="navigation-button previous" id="prevBtn" aria-label="Projet précédent">‹</button>
+    <!-- PORTFOLIO SECTION -->
+    <section class="portfolio-section">
+        <h2 class="section-title">Portfolio : de l'idée à l'identité visuelle </h2>
         
-        <main class="projects-grid" id="portfolioProjets">
-            <!-- projet 1 -->
-            <figure class="project-item">
-                <a href="projet_Template_Home_Interior.html" class="project-link">
-                <img src="./img/img template home interior.png" alt="Home interior" class="project-thumbnail">
-                <figcaption class="project-details">
-                    <span class="project-title">Home interior</span>
-                    <span class="project-type">Branding</span>
-                </figcaption>
-                </a>
-            </figure>
+        <div class="portfolio-slider-wrapper">
+            <div class="portfolio-cards">
+                <!-- Card 1 -->
+                <div class="portfolio-card">
+                    <a href="projet_Template_Home_Interior.html" class="project-link">
+                        <img src="./img/img template home interior.png" alt="Home interior" class="card-image">
+                        <div class="card-overlay">
+                            <div class="card-name">Home Interior</div>
+                            <div class="card-category">Branding</div>
+                        </div>
+                    </a>
+                </div>
 
-            <!-- projet 2 -->
-            <figure class="project-item">
-                 <a href="projet_Festival_Afro_Caribéen.html" class="project-link">
-                <img src="./img/Festival afro caribéen.jpg" alt="Festival Afro-Caribéen" class="project-thumbnail">
-                <figcaption class="project-details">
-                    <span class="project-title">Festival Afro-Caribéen</span>
-                    <span class="project-type">Identité Visuelle</span>
-                </figcaption>
-                </a>
-            </figure>
+                <!-- Card 2 -->
+                <div class="portfolio-card">
+                    <a href="projet_Festival_Afro_Caribéen.html" class="project-link">
+                        <img src="./img/Festival_afro_caribéen.jpg" alt="Festival Afro-Caribéen" class="card-image">
+                        <div class="card-overlay">
+                            <div class="card-name">Festival Afro-Caribéen</div>
+                            <div class="card-category">Identité Visuelle</div>
+                        </div>
+                    </a>
+                </div>
 
-            <!-- projet 3 -->
-            <figure class="project-item">
-                <a href="projet_portfolio_Cognitive_Balance.html" class="project-link">
-                <img src="./img/cognitive_balance.png" alt="Cognitive Balance" class="project-thumbnail">
-                <figcaption class="project-details">
-                    <span class="project-title">Cognitive Balance</span>
-                    <span class="project-type">Design UX - UI </span>
-                </figcaption>
-                </a>
-            </figure>
+                <!-- Card 3 -->
+                <div class="portfolio-card">
+                    <a href="projet_portfolio_Cognitive_Balance.html" class="project-link">
+                        <img src="./img/cognitive_balance.png" alt="Cognitive Balance" class="card-image">
+                        <div class="card-overlay">
+                            <div class="card-name">Cognitive Balance</div>
+                            <div class="card-category">Web Design</div>
+                        </div>
+                    </a>
+                </div>
 
-            <!-- projet 4 -->
-            <figure class="project-item">
-                 <a href="Projet_Beauty_Of_Darkness.html" class="project-link">
-                <img src="./img/beauty of darkness.jpg" alt="Beauty of Darkness" class="project-thumbnail">
-                <figcaption class="project-details">
-                    <span class="project-title">Beauty of Darkness</span>
-                    <span class="project-type"></span>
-                </figcaption>
-                </a>
-            </figure>
+                <!-- Card 4 -->
+                <div class="portfolio-card">
+                    <a href="Projet_Beauty_Of_Darkness.html" class="project-link">
+                        <img src="./img/beauty of darkness.jpg" alt="Beauty of Darkness" class="card-image">
+                        <div class="card-overlay">
+                            <div class="card-name">Beauty of Darkness</div>
+                            <div class="card-category">Branding</div>
+                        </div>
+                    </a>
+                </div>
 
-            <!-- projet 5 -->
-            <figure class="project-item">
-                 <a href="projet_barbie.html" class="project-link">
-                <img src="./img/barbie.png" alt="Lauren" class="project-thumbnail">
-                <figcaption class="project-details">
-                    <span class="project-title">Barbie</span>
-                    <span class="project-type">Affichage publicitaire</span>
-                </figcaption>
-            </figure>
-            </a>
-        </main>
-
-        <button class="navigation-button next" id="nextBtn" aria-label="Projet suivant">›</button>
-    </nav>
-</article>
-
-     <!-- FOOTER -->
-     <footer class="footer">
-        <div class="footer-container">
-            <!-- Logo & Tagline -->
-            <div class="footer-logo">
-                <div class="footer-img-logo">
-                        <a href="index.html"><img src="./img/logo/Logo_MOODBOARD_Studio_marron.png" alt="Moodboard Studio"></a>
+                <!-- Card 5 -->
+                <div class="portfolio-card">
+                    <a href="projet_barbie.html" class="project-link">
+                        <img src="./img/barbie.png" alt="Barbie" class="card-image">
+                        <div class="card-overlay">
+                            <div class="card-name">Barbie</div>
+                            <div class="card-category">Affichage publicitaire</div>
+                        </div>
+                    </a>
                 </div>
             </div>
-
-            <!-- Navigation -->
-            <nav class="footer-nav">
-                <ul>
-                    <li><a href="./services.html">Services</a></li> | 
-                    <li><a href="./portfolio.html">Portfolio</a></li> | 
-                    <li><a href="./contact.html">Contact</a></li> 
-                </ul>
-            </nav>
-
-            <!-- Contact Info -->
-            <div class="footer-contact">
-                <a href="mailto:contact@mooboard.studio">contact@mooboard.studio</a>
-                <p class="footer-location">Martinique</p>
-            </div>
-    </main> 
-
-    <script>
-        // Menu hamburger toggle
-        const toggleBtn = document.getElementById('toggleBtn');
-        const navLinks = document.getElementById('navLinks');
-
-        toggleBtn.addEventListener('click', () => {
-            toggleBtn.classList.toggle('active');
-            navLinks.classList.toggle('active');
-        });
-
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                toggleBtn.classList.remove('active');
-                navLinks.classList.remove('active');
-            });
-        });
-    </script>
+        </div>
+    </section>
 </body>
 </html>
