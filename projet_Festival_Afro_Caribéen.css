@@ -158,7 +158,6 @@
         }
 
         .hero-content h1 {
-            font-family: 'Bebas Neue', cursive;
             font-size: clamp(4rem, 10vw, 8rem);
             font-weight: 700;
             letter-spacing: 0.1em;
