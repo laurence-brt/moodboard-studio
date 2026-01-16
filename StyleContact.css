@@ -1,98 +1,98 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;900&display=swap");
-     * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        body {
-            font-family: 'Georgia', serif;
-            color: #2c2c2c;
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
+body {
+    font-family: 'Georgia', serif;
+    color: #2c2c2c;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
 
-        .navbar {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            padding: 20px 40px;
-            display: flex;
-            justify-content: space-between;
-            background-color: #f0ebe6;
-            align-items: center;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0ebe6;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
 
-        .logo img {
-            width: 250px;
-            height: 100px;
-        }
+.logo img {
+    width: 250px;
+    height: 100px;
+}
 
-        .togglebtn {
-            cursor: pointer;
-            width: 30px;
-            height: 30px;
-            position: relative;
-            display: none;
-        }
+.togglebtn {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    display: none;
+}
 
-        .togglebtn span {
-            position: absolute;
-            width: 30px;
-            height: 2px;
-            background-color: #2c2c2c;
-            left: 0;
-            transition: all 0.3s ease;
-        }
+.togglebtn span {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #2c2c2c;
+    left: 0;
+    transition: all 0.3s ease;
+}
 
-        .togglebtn span:nth-child(1) {
-            top: 0;
-        }
+.togglebtn span:nth-child(1) {
+    top: 0;
+}
 
-        .togglebtn span:nth-child(2) {
-            top: 15px;
-        }
+.togglebtn span:nth-child(2) {
+    top: 15px;
+}
 
-        .togglebtn span:nth-child(3) {
-            top: 30px;
-        }
+.togglebtn span:nth-child(3) {
+    top: 30px;
+}
 
-        .togglebtn.active span:nth-child(1) {
-            transform: rotate(45deg);
-            top: 15px;
-        }
+.togglebtn.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 15px;
+}
 
-        .togglebtn.active span:nth-child(2) {
-            opacity: 0;
-        }
+.togglebtn.active span:nth-child(2) {
+    opacity: 0;
+}
 
-        .togglebtn.active span:nth-child(3) {
-            transform: rotate(-45deg);
-            top: 15px;
-        }
+.togglebtn.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 15px;
+}
 
-        .nav-links {
-            display: flex;
-            gap: 40px;
-            list-style: none;
-            transition: all 0.3s;
-        }
+.nav-links {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    transition: all 0.3s;
+}
 
-        .nav-links a {
-            text-decoration: none;
-            color: #2c2c2c;
-            font-size: 14px;
-            letter-spacing: 1px;
-            transition: opacity 0.3s;
-        }
+.nav-links a {
+    text-decoration: none;
+    color: #2c2c2c;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: opacity 0.3s;
+}
 
-        .nav-links a:hover {
-            opacity: 0.6;
-        }
+.nav-links a:hover {
+    opacity: 0.6;
+}
 
-/* CONTACT SECTION - SPLIT SCREEN */
+/* CONTACT SECTION */
 .contact {
     width: 100%;
     min-height: 100vh;
@@ -183,7 +183,7 @@
     top: 50%;
     left: 1.35rem;
     transform: translateY(-50%);
-    border: #683924;
+    color: #683924;
     pointer-events: none;
     transition: all 0.3s ease;
     font-weight: 500;
@@ -218,60 +218,59 @@ textarea.contact-input:not(:placeholder-shown) + label {
 }
 
 .portfolio-btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-            padding: 20px 50px;
-            background: transparent;
-            border: 2px solid #b8a08a;
-            border-radius: 100px;
-            color: #b8a08a;
-            text-decoration: none;
-            font-size: 16px;
-            letter-spacing: 4px;
-            text-transform: uppercase;
-            font-weight: 400;
-            transition: all 0.4s ease;
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-        }
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px 50px;
+    background: transparent;
+    border: 2px solid #b8a08a;
+    border-radius: 100px;
+    color: #b8a08a;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
 
-        .portfolio-btn::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 0;
-            height: 0;
-            background: #683924;
-            border-radius: 100px;
-            transition: all 0.5s ease;
-            z-index: -1;
-        }
+.portfolio-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    background: #683924;
+    border-radius: 100px;
+    transition: all 0.5s ease;
+    z-index: -1;
+}
 
-        .portfolio-btn:hover::before {
-            width: 100%;
-            height: 100%;
-        }
+.portfolio-btn:hover::before {
+    width: 100%;
+    height: 100%;
+}
 
-        .portfolio-btn:hover {
-            color: #e8e0d5;
-            border-color: #b8a08a;
-        }
+.portfolio-btn:hover {
+    color: #e8e0d5;
+    border-color: #b8a08a;
+}
 
-        .portfolio-btn-arrow {
-            font-size: 20px;
-            transition: transform 0.4s ease;
-        }
+.portfolio-btn-arrow {
+    font-size: 20px;
+    transition: transform 0.4s ease;
+}
 
-        .portfolio-btn:hover .portfolio-btn-arrow {
-            transform: translateX(8px);
-        }
+.portfolio-btn:hover .portfolio-btn-arrow {
+    transform: translateX(8px);
+}
 
-/* RIGHT SIDE - IMAGE */
 .right {
     display: flex;
     justify-content: center;
@@ -316,301 +315,255 @@ textarea.contact-input:not(:placeholder-shown) + label {
 }
 
  
-       /* FOOTER */
-        .footer {
-            position: relative;
-            width: 100%;
-            background: linear-gradient(135deg, #d4c4b5 0%, #c9b9a8 100%);
-            padding: 80px 60px 40px;
-            color: white;
-        }
+/* FOOTER */
+.footer {
+    background: linear-gradient(135deg, #d4c4b5 0%, #c9b9a8 100%);
+    padding: 50px 40px 25px;
+    color: white;
+}
 
+.footer-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
 
-        .footer-img-logo img{
-            width: 250px;
-            height: 100px;
-            margin-bottom: 10px;
-            filter: brightness(0) invert(1);
-        }
+.footer-logo img {
+    width: 200px;
+    height: 80px;
+    filter: brightness(0) invert(1);
+}
 
-        .footer-container {
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
+.footer-nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-        /* Logo Section */
-        .footer-logo {
-            margin-bottom: 30px;
-        }
+.footer-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: opacity 0.3s;
+}
 
+.footer-nav a:hover {
+    opacity: 0.6;
+}
 
-        .footer-tagline {
-            font-size: 14px;
-            letter-spacing: 3px;
-            color: rgba(255, 255, 255, 0.8);
-            text-transform: uppercase;
-            font-weight: 400;
-        }
+.footer-contact a {
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: opacity 0.3s;
+    display: inline-block;
+}
 
-        /* Services Line */
-        .footer-services {
-            margin: 40px 0;
-            padding: 30px 0;
-            border-top: 1px solid rgba(255, 255, 255, 0.2);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-            width: 100%;
-            max-width: 800px;
-        }
+.footer-contact a:hover {
+    opacity: 0.7;
+}
 
-        .footer-services p {
-            font-size: 15px;
-            letter-spacing: 2px;
-            color: rgba(255, 255, 255, 0.9);
-            line-height: 1.8;
-        }
-
-        /* Navigation Links */
-        .footer-nav {
-            margin: 30px 0;
-        }
-
-        .footer-nav ul {
-            display: flex;
-            gap: 40px;
-            list-style: none;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .footer-nav a {
-            text-decoration: none;
-            color: white;
-            font-size: 14px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            transition: opacity 0.3s;
-            font-weight: 400;
-        }
-
-        .footer-nav a:hover {
-            opacity: 0.6;
-        }
-
-        /* Contact Info */
-        .footer-contact {
-            margin: 30px 0;
-        }
-
-        .footer-contact a {
-            color: white;
-            font-size: 16px;
-            letter-spacing: 1px;
-            text-decoration: none;
-            transition: opacity 0.3s;
-            display: inline-block;
-            margin-bottom: 10px;
-        }
-
-        .footer-contact a:hover {
-            opacity: 0.7;
-        }
-
-        .footer-location {
-            font-size: 14px;
-            color: rgba(255, 255, 255, 0.8);
-            margin-top: 15px;
-            letter-spacing: 1px;
-        }
+.footer-location {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
 
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {
-    .container {
-        gap: 0;
-    }
+.container {
+    gap: 0;
+}
 
-    .left {
-        padding: 60px 40px;
-    }
+.left {
+    padding: 60px 40px;
+}
 
-    .nav-links {
-        gap: 1.5rem;
-    }
+.nav-links {
+    gap: 1.5rem;
+}
 }
 
 @media (max-width: 875px)  {
-    .togglebtn {
-        display: block;
-        width: 25px;
-        height: 25px;
-    }
+.togglebtn {
+    display: block;
+    width: 25px;
+    height: 25px;
+}
 
-    .togglebtn span {
-        width: 25px;
-        height: 1.5px;
-    }
+.togglebtn span {
+    width: 25px;
+    height: 1.5px;
+}
 
-    .togglebtn span:nth-child(1) {
-        top: 0;
-    }
+.togglebtn span:nth-child(1) {
+    top: 0;
+}
 
-    .togglebtn span:nth-child(2) {
-        top: 12px;
-    }
+.togglebtn span:nth-child(2) {
+    top: 12px;
+}
 
-    .togglebtn span:nth-child(3) {
-        top: 24px;
-    }
+.togglebtn span:nth-child(3) {
+    top: 24px;
+}
 
-    .togglebtn.active span:nth-child(1) {
-        top: 12px;
-    }
+.togglebtn.active span:nth-child(1) {
+    top: 12px;
+}
 
-    .togglebtn.active span:nth-child(3) {
-        top: 12px;
-    }
+.togglebtn.active span:nth-child(3) {
+    top: 12px;
+}
 
-    .nav-links {
-        position: absolute;
-        top: 90px;
-        left: 0;
-        right: 0;
-        background: rgba(255, 255, 255, 0.98);
-        flex-direction: column;
-        padding: 40px;
-        gap: 20px;
-        transform: translateY(-100%);
-        opacity: 0;
-        pointer-events: none;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    }
+.nav-links {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.98);
+    flex-direction: column;
+    padding: 40px;
+    gap: 20px;
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
 
-    .nav-links.active {
-        transform: translateY(0);
-        opacity: 1;
-        pointer-events: all;
-    }
+.nav-links.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
+}
 
-    .navbar {
-        padding: 20px 30px;
-    }
+.navbar {
+    padding: 20px 30px;
+}
 
-    .contact {
-        padding-top: 120px;
-    }
+.contact {
+    padding-top: 120px;
+}
 
-    .container {
-        grid-template-columns: 1fr;
-        min-height: auto;
-    }
+.container {
+    grid-template-columns: 1fr;
+    min-height: auto;
+}
 
-    .left {
-        padding: 40px 30px;
-        order: 1;
-    }
+.left {
+    padding: 40px 30px;
+    order: 1;
+}
 
-    .right {
-        display: none;
-    }
+.right {
+    display: none;
+}
 
-    .contact-form {
-        grid-template-columns: 1fr;
-        gap: 1.2rem;
-    }
+.contact-form {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+}
 
-    .input-wrap.w-100,
-    .contact-buttons {
-        grid-column: span 1;
-    }
+.input-wrap.w-100,
+.contact-buttons {
+    grid-column: span 1;
+}
 
-    .contact-input {
-        padding: 1.3rem 1.2rem 0.7rem 1.2rem;
-        font-size: 0.95rem;
-        border-radius: 12px;
-    }
+.contact-input {
+    padding: 1.3rem 1.2rem 0.7rem 1.2rem;
+    font-size: 0.95rem;
+    border-radius: 12px;
+}
 
-    .input-wrap label {
-        left: 1.2rem;
-        font-size: 0.95rem;
-    }
+.input-wrap label {
+    left: 1.2rem;
+    font-size: 0.95rem;
+}
 
-    .btn {
-        padding: 1.1rem 2.5rem;
-        font-size: 0.95rem;
-        width: 100%;
-    }
+.btn {
+    padding: 1.1rem 2.5rem;
+    font-size: 0.95rem;
+    width: 100%;
+}
 }
 
 @media (max-width: 600px) {
-    .contact {
-        padding-top: 140px;
+.contact {
+    padding-top: 140px;
+}
+
+.left {
+    padding: 30px 20px;
+}
+
+.contact-heading h1 {
+    text-align: center;
+}
+
+.contact-heading h2 {
+    text-align: center;
+}
+
+.footer {
+        padding: 60px 30px 30px;
     }
 
-    .left {
-        padding: 30px 20px;
+    .footer-logo-text {
+        font-size: 36px;
+        letter-spacing: 4px;
     }
 
-    .contact-heading h1 {
-        text-align: center;
+    .footer-tagline {
+        font-size: 12px;
+        letter-spacing: 2px;
     }
 
-    .contact-heading h2 {
-        text-align: center;
+    .footer-nav ul {
+        gap: 20px;
+        flex-direction: column;
     }
 
-     .footer {
-                padding: 60px 30px 30px;
-            }
+    .footer-nav a {
+        font-size: 13px;
+    }
 
-            .footer-logo-text {
-                font-size: 36px;
-                letter-spacing: 4px;
-            }
-
-            .footer-tagline {
-                font-size: 12px;
-                letter-spacing: 2px;
-            }
-
-            .footer-nav ul {
-                gap: 20px;
-                flex-direction: column;
-            }
-
-            .footer-nav a {
-                font-size: 13px;
-            }
-
-            .footer-contact a {
-                font-size: 14px;
-            }
+    .footer-contact a {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 480px) {
-    .contact-input {
-        padding: 1.2rem 1rem 0.6rem 1rem;
-        font-size: 0.9rem;
-    }
+.contact-input {
+    padding: 1.2rem 1rem 0.6rem 1rem;
+    font-size: 0.9rem;
+}
 
-    .input-wrap label {
-        left: 1rem;
-        font-size: 0.9rem;
-    }
+.input-wrap label {
+    left: 1rem;
+    font-size: 0.9rem;
+}
 
-    .btn {
-        padding: 1rem 2rem;
-        font-size: 0.9rem;
-    }
-     
-     .footer {
-                padding: 40px 20px 20px;
-            } 
+.btn {
+    padding: 1rem 2rem;
+    font-size: 0.9rem;
+}
+    
+.footer {
+        padding: 40px 20px 20px;
+    } 
 
-            .footer-logo-text {
-                font-size: 28px;
-                letter-spacing: 3px;
-            }
+    .footer-logo-text {
+        font-size: 28px;
+        letter-spacing: 3px;
+    }
 }

@@ -42,8 +42,7 @@
             <h1 class="error-code">404</h1>
             <h2 class="error-title">Page en cours de construction</h2>
             <p class="error-message">
-                Nous travaillons actuellement sur cette page afin de vous dévoiler nos projets.
-                Notre équipe met tout en œuvre pour la rendre disponible très prochainement.
+                Je travaille actuellement sur ce projet pour vous le présenter sous son meilleur jour. Revenez bientôt pour découvrir cette création !
             </p>
 
             <div class="error-buttons">
@@ -58,50 +57,6 @@
             </div>
         </div>
     </section>
-
-     <!-- FOOTER -->
-     <footer class="footer">
-        <div class="footer-container">
-            <!-- Logo & Tagline -->
-            <div class="footer-logo">
-                <div class="footer-img-logo">
-                        <a href="index.html"><img src="./img/logo/Logo_MOODBOARD_Studio_marron.png" alt="Moodboard Studio"></a>
-                </div>
-            </div>
-
-            <!-- Navigation -->
-            <nav class="footer-nav">
-                <ul>
-                    <li><a href="A propos.html">A PROPOS</a></li> | 
-                    <li><a href="./services.html">Services</a></li> | 
-                    <li><a href="./portfolio.html">Portfolio</a></li> | 
-                    <li><a href="./contact.html">Contact</a></li> 
-                </ul>
-            </nav>
-
-            <!-- Contact Info -->
-            <div class="footer-contact">
-                <a href="mailto:contact@mooboard.studio">contact@mooboard.studio</a>
-                <p class="footer-location">Martinique</p>
-            </div>
-    </main> 
-
-    <script>
-        // Menu hamburger toggle
-        const toggleBtn = document.getElementById('toggleBtn');
-        const navLinks = document.getElementById('navLinks');
-
-        toggleBtn.addEventListener('click', () => {
-            toggleBtn.classList.toggle('active');
-            navLinks.classList.toggle('active');
-        });
-
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                toggleBtn.classList.remove('active');
-                navLinks.classList.remove('active');
-            });
-        });
-    </script>
+      <script src="script.js"></script>
 </body>
 </html>

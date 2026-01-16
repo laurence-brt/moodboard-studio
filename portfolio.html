@@ -10,31 +10,29 @@
 </head>
 
 <body>
-    <!-- NAVIGATION (Pure CSS) -->
     <nav class="navbar">
         <div class="logo">
-            <a href="index.html">
-                <img src="./img/logo/Logo_MOODBOARD_Studio_marron.png" alt="Moodboard Studio">
-            </a>
+         <a href="index.html"><img src="./img/logo/Logo_MOODBOARD_Studio_marron.png" alt="Moodboard Studio"></a>
         </div>
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label for="menu-toggle" class="togglebtn">
+        <div class="togglebtn" id="toggleBtn">
             <span></span>
             <span></span>
             <span></span>
-        </label>
-        <ul class="nav-links">
+          
+        </div>
+        <ul class="nav-links" id="navLinks">
             <li><a href="index.html">ACCUEIL</a></li>
-            <li><a href="A propos.html">À PROPOS</a></li>
+            <li><a href="A propos.html">A PROPOS</a></li>
             <li><a href="services.html">SERVICES</a></li>
             <li><a href="portfolio.html">PORTFOLIO</a></li>
             <li><a href="contact.html">CONTACT</a></li>
         </ul>
+
     </nav>
 
     <!-- PORTFOLIO SECTION -->
     <section class="portfolio-section">
-        <h2 class="section-title">Portfolio : de l'idée à l'identité visuelle </h2>
+        <h2 class="section-title">Portfolio, de l'idée à l'identité visuelle </h2>
         
         <div class="portfolio-slider-wrapper">
             <div class="portfolio-cards">
@@ -52,7 +50,7 @@
                 <!-- Card 2 -->
                 <div class="portfolio-card">
                     <a href="projet_Festival_Afro_Caribéen.html" class="project-link">
-                        <img src="./img/Festival_afro_caribéen.jpg" alt="Festival Afro-Caribéen" class="card-image">
+                        <img src="./img/Festival_afro_caribéen.jpg" alt="Festival Afro Caribéen" class="card-image">
                         <div class="card-overlay">
                             <div class="card-name">Festival Afro-Caribéen</div>
                             <div class="card-category">Identité Visuelle</div>
@@ -66,7 +64,7 @@
                         <img src="./img/cognitive_balance.png" alt="Cognitive Balance" class="card-image">
                         <div class="card-overlay">
                             <div class="card-name">Cognitive Balance</div>
-                            <div class="card-category">Web Design</div>
+                            <div class="card-category">Design UX - UI application mobile</div>
                         </div>
                     </a>
                 </div>
@@ -95,5 +93,6 @@
             </div>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>

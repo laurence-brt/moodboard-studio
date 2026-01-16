@@ -1,111 +1,385 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="Cognitive Balance - Projet UX/UI Design par Moodboard Studio"/>
-    <title>Cognitive Balance - Moodboard Studio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognitive Balance - Étude de cas UX-UI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="projet_portfolio_Cognitive_Balance.css"/>
 </head>
-
 <body>
-    <!-- NAVIGATION (Pure CSS) -->
-    <nav class="navbar">
+     <nav class="navbar">
         <div class="logo">
-            <a href="index.html">
-                <img src="./img/logo/Logo_MOODBOARD_Studio_marron.png" alt="Moodboard Studio">
-            </a>
+         <a href="index.html"><img src="./img/logo/Logo_MOODBOARD_Studio_marron.png" alt="Moodboard Studio"></a>
         </div>
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label for="menu-toggle" class="togglebtn">
+        <div class="togglebtn" id="toggleBtn">
             <span></span>
             <span></span>
             <span></span>
-        </label>
-        <ul class="nav-links">
+          
+        </div>
+        <ul class="nav-links" id="navLinks">
             <li><a href="index.html">ACCUEIL</a></li>
-            <li><a href="A propos.html">À PROPOS</a></li>
+            <li><a href="A propos.html">A PROPOS</a></li>
             <li><a href="services.html">SERVICES</a></li>
             <li><a href="portfolio.html">PORTFOLIO</a></li>
             <li><a href="contact.html">CONTACT</a></li>
         </ul>
     </nav>
 
-    <!-- SECTION PROJET -->
-    <article class="project-showcase">
-        <!-- Header -->
-        <header class="project-header">
-            <h1 class="project-title">Cognitive Balance</h1>
-            <p class="project-type">Design UX/UI</p>
-        </header>
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Cognitive Balance</h1>
+        <p class="subtitle">
+            Application mobile,design UX-UI centré utilisateur
+        </p>
+    </section>
 
-        <!-- Vidéo principale -->
-        <section class="video-section">
-            <video src="./video/Application_UX_UI_Cognitive_balance.mov" class="project-video" autoplay muted loop playsinline preload="auto"></video>
-        </section>
-
-        <!-- Prototypes -->
-        <section class="prototypes-section">
-            <div class="prototypes-grid">
-                <div class="prototype-item">
-                    <img src="./img/cognitive balance/Frame_loading.png" alt="Chargement" class="prototype-img">
-                    <p class="prototype-caption">Chargement</p>
+    <!-- OVERVIEW -->
+    <section class="overview">
+        <div class="container">
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <h3>RÔLE</h3>
+                    <p>UX-UI Designer</p>
                 </div>
-                <div class="prototype-item">
-                    <img src="./img/cognitive balance/prototype_access_code.png" alt="Code d'accès" class="prototype-img">
-                    <p class="prototype-caption">Code d'accès</p>
+                <div class="overview-card">
+                    <h3>ANNÉE</h3>
+                    <p>Projet personnel •2024</p>
                 </div>
-                <div class="prototype-item">
-                    <img src="./img/cognitive balance/prototype_create_account.png" alt="Création de compte" class="prototype-img">
-                    <p class="prototype-caption">Création de compte</p>
-                </div>
-                <div class="prototype-item">
-                    <img src="./img/cognitive balance/prototype_log_in.png" alt="Connexion" class="prototype-img">
-                    <p class="prototype-caption">Connexion</p>
-                </div>
-                <div class="prototype-item">
-                    <img src="./img/cognitive balance/Prototype_reset_Password.png" alt="Réinitialisation de mot de passe" class="prototype-img">
-                    <p class="prototype-caption">Réinitialisation</p>
-                </div>
-                <div class="prototype-item">
-                    <img src="./img/cognitive balance/prototype_scroll.png" alt="Scroll" class="prototype-img">
-                    <p class="prototype-caption">Scroll</p>
+                <div class="overview-card">
+                    <h3>OUTILS</h3>
+                    <p>Figma</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Mockup final -->
-        <section class="final-mockup">
-            <div class="mockup-container">
-                <img src="./img/mockup_cognitive_balance.png" alt="Mockup Cognitive Balance" class="mockup-img">
+    <!-- CONTEXT & PROBLEM -->
+    <section class="problem">
+        <div class="container">
+            <h2 class="section-title">Le contexte & le défi</h2>
+            <p class="section-intro">
+                Comprendre le parcours utilisateur et identifier les problématiques à résoudre
+            </p>
+            
+            <div class="problem-content">
+                <div class="context-box">
+                    <h3>Le parcours de l'utilisateur</h3>
+                    <p>
+                       Cognitive Balance accompagne de l'ouverture de l'application jusqu'au suivi quotidien de ses habitudes. 
+                    </p>
+                </div>
+
+                <div class="user-flow">
+                    <h4>Le flow de l'application</h4>
+                    <div class="flow-steps">
+                        <div class="flow-step">
+                            <div class="flow-number">01</div>
+                            <h5>Ouverture & Loading</h5>
+                            <p>Écran de chargement avec logo circulaire animé et palette apaisante</p>
+                        </div>
+
+                        <div class="flow-step">
+                            <div class="flow-number">02</div>
+                            <h5>Connexion / Inscription</h5>
+                            <p>Onboarding simplifié avec options de connexion rapide ou création de compte</p>
+                        </div>
+
+                        <div class="flow-step">
+                            <div class="flow-number">03</div>
+                            <h5>Page d'accueil</h5>
+                            <p>Dashboard personnalisé avec accès direct aux méditations et objectifs du jour</p>
+                        </div>
+
+                        <div class="flow-step">
+                            <div class="flow-number">04</div>
+                            <h5>Méditation guidée</h5>
+                            <p>Sélection de sessions adaptées au moment de la journée et au niveau de stress</p>
+                        </div>
+
+                        <div class="flow-step">
+                            <div class="flow-number">05</div>
+                            <h5>Tracker d'habitudes</h5>
+                            <p>Suivi visuel des progrès avec cercles et séries de jours consécutifs</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 style="text-align: center; font-size: 1.8rem; color: #1A1A1A; margin: 4rem 0 2rem;">
+                    Les défis à résoudre
+                </h3>
+
+                <div class="challenges-list">
+                    <div class="challenge-card">
+                        <h4>Simplicité d'utilisation</h4>
+                        <p>
+                            Créer une interface épurée et intuitive où chaque interaction est fluide
+                        </p>
+                    </div>
+
+                    <div class="challenge-card">
+                        <h4>Motivation visuelle</h4>
+                        <p>
+                           Intégrer un système de feedback positif et visualisation des progrès
+                        </p>
+                    </div>
+
+                    <div class="challenge-card">
+                        <h4></h4>
+                        <p>
+                           Adapter les contenus selon le moment, l'humeur et les objectifs
+                        </p>
+                    </div>
+
+                    <div class="challenge-card">
+                        <h4>Engagement durable</h4>
+                        <p>
+                            Accompagner progressivement et favoriser l'installation d'habitudes saines
+                        </p>
+                    </div>
+                </div>
             </div>
-        </section>
-    </article>
+        </div>
+    </section>
 
-    <!-- FOOTER NAVIGATION PROJETS -->
-    <footer class="footer-projects">
+    <!-- SOLUTION -->
+    <section class="solution">
+        <div class="container">
+            <h2 class="section-title">Ma solution de design</h2>
+            <p class="section-intro">
+                Une approche centrée sur la simplicité, la motivation et la personnalisation
+            </p>
+
+            <div class="solution-steps">
+                <div class="solution-step">
+                    <span class="step-number">01</span>
+                    <div class="step-content">
+                        <h3>Interface épurée et zen</h3>
+                        <p>
+                            Design minimaliste avec une palette douce (rose, lavande) qui créé une atmosphère apaisante 
+                            et non-intrusive. 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="solution-step">
+                    <span class="step-number">02</span>
+                    <div class="step-content">
+                        <h3>Tracker d'habitudes visuel</h3>
+                        <p>
+                            Système de suivi intuitif avec visualisation circulaire des progrès.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="solution-step">
+                    <span class="step-number">03</span>
+                    <div class="step-content">
+                        <h3>Méditations adaptées</h3>
+                        <p>
+                            Sélection intelligente de sessions selon le moment (matin/soir), le niveau de stress et le temps 
+                            disponible. Chaque utilisateur trouve ce dont il a besoin, quand il en a besoin.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WIREFRAMES -->
+    <section class="wireframes">
+        <div class="container">
+            <h2 class="section-title">Du croquis au prototype</h2>
+            <p class="section-intro">
+                Premières ébauches et itérations des écrans principaux pour tester l'expérience utilisateur
+            </p>
+
+            <div class="wireframes-grid">
+                <div class="wireframe-item">
+                    <img src="./img/cognitive balance/prototype_create_account.png" alt="Prototype">
+                    <p class="wireframe-label">Création de compte</p>
+                </div>
+                <div class="wireframe-item">
+                    <img src="./img/cognitive balance/loading.png" alt="Prototype">
+                    <p class="wireframe-label">Connexion</p>
+                </div>
+                <div class="wireframe-item">
+                    <img src="./img/cognitive balance/Reset_your_password.png" alt="Prototype">
+                    <p class="wireframe-label">Réinitilialisation mot de passe</p>
+                </div>
+                <div class="wireframe-item">
+                    <img src="./img/cognitive balance/prototype_access_code.png" alt="Prototype">
+                    <p class="wireframe-label">Code d'accès</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DESIGN SYSTEM -->
+    <section class="design-system">
+        <div class="container">
+            <h2 class="section-title">L'identité visuelle</h2>
+            <p class="section-intro">
+                Une palette de couleurs douce et cohérente qui évoque calme, confiance et bien-être
+            </p>
+
+            <div class="colors">
+                <div class="color-box">
+                    <div class="color-swatch" style="background: #E91E8C;"></div>
+                    <p class="color-name">Rose vif</p>
+                    <p class="color-code">#E91E8C</p>
+                </div>
+                <div class="color-box">
+                    <div class="color-swatch" style="background: #E8D5F5;"></div>
+                    <p class="color-name">Lavande</p>
+                    <p class="color-code">#E8D5F5</p>
+                </div>
+                <div class="color-box">
+                    <div class="color-swatch" style="background: #FFB3D9;"></div>
+                    <p class="color-name">Rose pastel</p>
+                    <p class="color-code">#FFB3D9</p>
+                </div>
+                <div class="color-box">
+                    <div class="color-swatch" style="background: #F9F5FB;"></div>
+                    <p class="color-name">Blanc cassé</p>
+                    <p class="color-code">#F9F5FB</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ÉCRANS FINAUX -->
+    <section class="final-screens">
+        <div class="container">
+            <h2 class="section-title">Résultat</h2>
+            <p class="section-intro">
+                Maquettes de l'application
+            </p>
+
+            <div class="screens-showcase">
+                <div class="screen-card">
+                    <img src="./img/cognitive balance/loading.png" alt="Loading">
+                </div>
+                <div class="screen-card">
+                    <img src="./img/cognitive balance/Log_in .png" alt="Login">
+                </div>
+                <div class="screen-card">
+                    <img src="./img/cognitive balance/Register.png" alt="Register">
+                </div>
+                <div class="screen-card">
+                    <img src="./img/cognitive balance/Méditation.png" alt="Meditation">
+                </div>
+                <div class="screen-card">
+                    <img src="./img/cognitive balance/page_tracker_d'habitude.png" alt="Habit Tracker">
+                </div>
+                <div class="screen-card">
+                    <img src="./img/cognitive balance/Confirm_new_Password.png" alt="new password">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MOCKUP FINAL -->
+    <section class="mockup-final">
+        <div class="container">
+            <h2 class="section-title">Vue d'ensemble du projet</h2>
+            <img src="./img/cognitive balance/mockup_cognitive_balance.png" alt="Mockup Final">
+        </div>
+    </section>
+
+    <!-- RÉFÉRENCES -->
+    <section class="references">
+        <div class="container">
+            <h2 class="section-title">Références & Inspirations</h2>
+            <p class="section-intro">
+                Sources d'inspiration pour l'identité visuelle et l'expérience utilisateur
+            </p>
+
+            <div class="references-grid">
+                <div class="reference-card">
+                    <h3>Design minimaliste zen</h3>
+                    <p>
+                        Approche épurée privilégiant l'espace blanc et les animations douces pour créer une atmosphère de sérénité.
+                    </p>
+                </div>
+
+                <div class="reference-card">
+                    <h3>Gamification positive</h3>
+                    <p>
+                       Système de tracking avec visualisation circulaire intuitive et renforcement positif pour encourager la régularité.
+                    </p>
+                </div>
+
+                <div class="reference-card">
+                    <h3>Psychologie des couleurs </h3>
+                    <p>
+                        Choix de tons roses et violets basé sur la psychologie des couleurs, le violet évoque la spiritualité et la sérénité, le rose apporte douceur et réconfort émotionnel.
+                    </p>
+                </div>
+
+                <div class="reference-card">
+                    <h3>Onboarding progressif</h3>
+                    <p>
+                       Accompagnement étape par étape permettant de découvrir l'application sans surcharge d'informations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RÉSULTATS -->
+    <section class="results">
+        <div class="container">
+            <h2 class="section-title">Résultat final</h2>
+            
+        <div class="hero-image">
+            <video src="./video/Application_UX_UI_Cognitive_balance.mov" class="hero-video" autoplay muted loop playsinline preload="auto"></video>
+        </div>
+
+
+                <div class="skills-learned">
+                    <h3>Compétences</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Wireframe</span>
+                        <span class="skill-tag">Prototypage</span>
+                        <span class="skill-tag">UI Design</span>
+                        <span class="skill-tag">UX Design</span>
+                        <span class="skill-tag">Figma</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- FOOTER -->
+    <footer>
         <div class="footer-projects-split">
             <!-- Projet précédent -->
             <a href="./projet_Festival_Afro_Caribéen.html" class="footer-project-card left">
-                <div class="project-overlay" data-number="02">
+                 <div class="project-overlay" data-number="02">
                     <span class="project-direction">Projet précédent</span>
                     <h3 class="project-name">Festival Afro-Caribéen</h3>
-                    <p class="project-category">Identité Visuelle</p>
+                    <p class="project-type">Identité Visuelle Événementielle</p>
                     <span class="project-arrow">→</span>
                 </div>
             </a>
-
-            <!-- Projet suivant -->
-            <a href="./Projet_Beauty_Of_Darkness.html" class="footer-project-card right">
-                <div class="project-overlay" data-number="04">
+          
+             <!-- Projet suivant -->
+         <a href="./Projet_Beauty_Of_Darkness.html" class="footer-project-card right">
+                 <div class="project-overlay" data-number="04">
                     <span class="project-direction">Projet suivant</span>
                     <h3 class="project-name">Beauty of Darkness</h3>
-                    <p class="project-category">Affiche Cinématographique</p>
+                    <p class="project-type">Affiche Cinématographique</p>
                     <span class="project-arrow">→</span>
                 </div>
             </a>
         </div>
     </footer>
+    <script src="script.js"></script>   
 </body>
 </html>
+
+

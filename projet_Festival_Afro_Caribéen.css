@@ -99,7 +99,7 @@
             padding: 0 2rem;
         }
 
-        /* HERO PARALLAX FIXE */
+        /* HERO PARALLAX */
         .hero-parallax {
             height: 100vh;
             position: relative;
@@ -305,7 +305,7 @@
             padding: 2rem;
             overflow-x: auto;
             scrollbar-width: thin;
-            scrollbar-color: (#E91E8C) rgba(255, 255, 255, 0.1);
+            scrollbar-color: #E91E8C rgba(255, 255, 255, 0.1);
         }
 
         .horizontal-scroll::-webkit-scrollbar {
@@ -563,7 +563,6 @@
             background: linear-gradient(to left, rgba(231, 223, 210, 0.03), transparent);
         }
 
-        /* Effet hover subtil */
         .footer-project-card::after {
             content: '';
             position: absolute;
@@ -596,7 +595,6 @@
             transform: translateY(-12px);
         }
 
-        /* Numéro de projet */
         .project-overlay::before {
             content: attr(data-number);
             display: block;

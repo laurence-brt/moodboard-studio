@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="projet_Festival_Afro_Caribéen.css"/>
 
 </head>
@@ -35,7 +36,6 @@
     </nav>
 
     <!-- HERO IMMERSIVE AVEC PARALLAX -->
-      <!-- HERO PARALLAX FIXE -->
     <section class="hero-parallax">
         <div class="hero-background">
             <img src="./img/Festival_afro_caribéen.jpg" alt="Festival Afro-Caribéen">
@@ -47,13 +47,12 @@
         </div>
     </section>
 
-    <!-- MOODBOARD SECTION - Style Oxford Blue -->
+    <!-- MOODBOARD SECTION -->
     <section class="moodboard-section">
         <div class="container">
             <h2 class="moodboard-title">Festival Afro-Caribéen</h2>
             <p class="moodboard-subtitle">Identité Visuelle</p>
-
-            <!-- Palette de couleurs -->
+            
             <div class="color-palette">
                 <p class="palette-title">Palette de Couleurs</p>
                 <div class="color-swatches">
@@ -87,8 +86,8 @@
                     <p>Designer graphique</p>
                 </div>
                 <div class="context-item">
-                    <h3>DURÉE</h3>
-                    <p>Août 2024</p>
+                    <h3>ANNÉE</h3>
+                    <p> Projet personnel • 2023</p>
                 </div>
             </div>
         </div>
@@ -135,30 +134,24 @@
         <div class="container">
             <h2>Déclinaisons & Mockups</h2>
             <div class="mockups-grid">
-                <!-- Billboard Large -->
                 <div class="mockups-item large">
                     <img src="./img/K8w40o7JY.png" alt="Billboard extérieur">
                     <div class="mockups-caption">
                         <p>Billboard extérieur - Impact visuel maximal dans l'espace urbain</p>
                     </div>
                 </div>
-
-                <!-- Tote Bag -->
                 <div class="mockups-item">
                     <img src="./img/Blue and Pink Soft Magazine Cover Mockup Instagram Post.jpg" alt="Tote bag merchandising">
                     <div class="mockups-caption">
                         <p>Tote bag merchandising - Goodies festival</p>
                     </div>
                 </div>
-
-                <!-- Billet -->
                 <div class="mockups-item">
                     <img src="./img/Billet Concert Musique Moderne Rose Violet Noir - 1.jpg" alt="Billet événement">
                     <div class="mockups-caption">
                         <p>Billet événement - Design recto avec infos pratiques</p>
                     </div>
                 </div>
-                <!-- Billet -->
                 <div class="mockups-item">
                     <img src="./img/Billet Concert Musique Moderne Rose Violet Noir - 2.jpg" alt="Billet événement">
                     <div class="mockups-caption">
@@ -204,22 +197,6 @@
             </a>
         </div>
     </footer>
-    <script>
-        // Menu hamburger toggle
-        const toggleBtn = document.getElementById('toggleBtn');
-        const navLinks = document.getElementById('navLinks');
-
-        toggleBtn.addEventListener('click', () => {
-            toggleBtn.classList.toggle('active');
-            navLinks.classList.toggle('active');
-        });
-
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                toggleBtn.classList.remove('active');
-                navLinks.classList.remove('active');
-            });
-        });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

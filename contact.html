@@ -82,63 +82,30 @@
            </div>
         </section>
 
-        <!-- FOOTER -->
-     <footer class="footer">
+     <!-- FOOTER -->
+    <footer class="footer">
         <div class="footer-container">
-            <!-- Logo & Tagline -->
             <div class="footer-logo">
-                <div class="footer-img-logo">
-                        <a href="index.html"><img src="./img/logo/Logo_MOODBOARD_Studio_marron.png" alt="Moodboard Studio"></a>
-                </div>
+                <a href="index.html">
+                    <img src="./img/logo/Logo_MOODBOARD_Studio_marron.png" alt="Moodboard Studio">
+                </a>
             </div>
 
-            <!-- Navigation -->
             <nav class="footer-nav">
                 <ul>
-                    <li><a href="A propos.html">A PROPOS</a></li> | 
-                    <li><a href="./services.html">Services</a></li> | 
-                    <li><a href="./portfolio.html">Portfolio</a></li> | 
-                    <li><a href="./contact.html">Contact</a></li> 
+                    <li><a href="A propos.html">À PROPOS</a></li>
+                    <li><a href="./services.html">SERVICES</a></li>
+                    <li><a href="./portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
                 </ul>
             </nav>
 
-            <!-- Contact Info -->
             <div class="footer-contact">
                 <a href="mailto:contact@mooboard.studio">contact@mooboard.studio</a>
                 <p class="footer-location">Martinique</p>
             </div>
-    </main> 
-
-    <script>
-        // Menu hamburger toggle
-        const toggleBtn = document.getElementById('toggleBtn');
-        const navLinks = document.getElementById('navLinks');
-
-        toggleBtn.addEventListener('click', () => {
-            toggleBtn.classList.toggle('active');
-            navLinks.classList.toggle('active');
-        });
-
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                toggleBtn.classList.remove('active');
-                navLinks.classList.remove('active');
-            });
-        });
-
-        // Label animation on input focus
-        const inputs = document.querySelectorAll('.contact-input');
-        inputs.forEach(input => {
-            input.addEventListener('focus', () => {
-                input.parentElement.classList.add('focused');
-            });
-            
-            input.addEventListener('blur', () => {
-                if (input.value === '') {
-                    input.parentElement.classList.remove('focused');
-                }
-            });
-        });
-    </script>
+        </div>
+    </footer>
+     <script src="script.js"></script>
 </body>
 </html>

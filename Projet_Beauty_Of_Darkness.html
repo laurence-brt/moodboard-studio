@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Projet_Beauty_Of_Darkness.css"/>
 
 </head>
@@ -60,8 +61,8 @@
                     <p>Directrice artistique<br>Designer graphique</p>
                 </div>
                 <div class="context-item">
-                    <h3>DURÉE</h3>
-                    <p>2 semaines<br>Septembre 2024</p>
+                    <h3>ANNÉE</h3>
+                    <p> Projet personnel • 2023</p>
                 </div>
             </div>
         </div>
@@ -101,7 +102,6 @@
         <div class="container">
             <h2>Déclinaisons & Applications</h2>
             <div class="mockups-grid">
-                <!-- TV Mockup -->
                 <div class="mockup-item">
                     <div class="mockup-frame">
                         <img src="./img/mockup film télé.jpg" alt="Mockup interface streaming">
@@ -109,7 +109,6 @@
                     <p class="mockup-caption">Interface plateforme streaming - Mise en avant hero</p>
                 </div>
 
-                <!-- Livre Mockup -->
                 <div class="mockup-item">
                     <div class="mockup-frame">
                         <img src="./img/mockup livre beauty of darkness.jpg" alt="Mockup couverture livre">
@@ -165,7 +164,6 @@
    <!-- FOOTER -->
     <footer>
         <div class="footer-projects-split">
-            <!-- Projet précédent -->
             <a href="./projet_portfolio_Cognitive_Balance.html" class="footer-project-card left">
                 <div class="project-overlay" data-number="03">
                     <span class="project-direction">Projet précédent</span>
@@ -175,7 +173,6 @@
                 </div>
             </a>
 
-            <!-- Projet suivant -->
             <a href="./projet_barbie.html" class="footer-project-card right">
                 <div class="project-overlay" data-number="05">
                     <span class="project-direction">Projet suivant</span>
@@ -186,22 +183,6 @@
             </a>
         </div>
     </footer>
-    <script>
-        // Menu hamburger toggle
-        const toggleBtn = document.getElementById('toggleBtn');
-        const navLinks = document.getElementById('navLinks');
-
-        toggleBtn.addEventListener('click', () => {
-            toggleBtn.classList.toggle('active');
-            navLinks.classList.toggle('active');
-        });
-
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                toggleBtn.classList.remove('active');
-                navLinks.classList.remove('active');
-            });
-        });
-    </script>
+     <script src="script.js"></script>
 </body>
 </html>

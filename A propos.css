@@ -1,8 +1,4 @@
  @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap");
-
-/* ============================================
-   BASE STYLES
-   ============================================ */
 * {
     margin: 0;
     padding: 0;
@@ -23,9 +19,7 @@ body {
     padding: 0 2rem;
 }
 
-/* ============================================
-   NAVIGATION (identique à index.html)
-   ============================================ */
+/* NAVIGATION */
 .navbar {
     position: fixed;
     top: 0;
@@ -98,9 +92,7 @@ body {
     opacity: 0.6;
 }
 
-/* ============================================
-   HERO SECTION (Split Screen)
-   ============================================ */
+/* HERO SECTION */
 .hero-about {
     min-height: 100vh;
     display: grid;
@@ -110,7 +102,6 @@ body {
     margin-top: 100px;
 }
 
-/* Partie gauche - Texte centré */
 .hero-content {
     display: flex;
     flex-direction: column;
@@ -138,7 +129,6 @@ body {
     line-height: 1.4;
 }
 
-/* Partie droite - Image centrée */
 .hero-image {
     display: flex;
     align-items: center;
@@ -156,9 +146,7 @@ body {
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
 }
 
-/* ============================================
-   À PROPOS
-   ============================================ */
+/* À PROPOS */
 .about-section {
     padding: 5rem 2rem;
     background: #f0ebe6;
@@ -183,9 +171,7 @@ body {
     margin-bottom: 1.5rem;
 }
 
-/* ============================================
-   COMPÉTENCES
-   ============================================ */
+/* COMPÉTENCES */
 .skills-section {
     padding: 5rem 2rem;
     background: #F8F8F8;
@@ -252,9 +238,7 @@ body {
     font-weight: 500;
 }
 
-/* ============================================
-   MES ATOUTS
-   ============================================ */
+/* MES ATOUTS */
 .atouts-section {
     padding: 5rem 2rem;
     background: #f0ebe6;
@@ -311,9 +295,7 @@ body {
     line-height: 1.7;
 }
 
-/* ============================================
-   FOOTER (identique à index.html)
-   ============================================ */
+/* FOOTER */
 .footer {
     background: linear-gradient(135deg, #d4c4b5 0%, #c9b9a8 100%);
     padding: 60px 40px 30px;
@@ -376,11 +358,8 @@ body {
     letter-spacing: 1px;
 }
 
-/* ============================================
-   RESPONSIVE
-   ============================================ */
+/* RESPONSIVE */
 
-/* Tablettes */
 @media (max-width: 968px) {
     .togglebtn {
         display: block;
@@ -410,7 +389,6 @@ body {
         padding: 20px 30px;
     }
 
-    /* Hero responsive tablette */
     .hero-about {
         grid-template-columns: 1fr;
         min-height: auto;
@@ -441,7 +419,6 @@ body {
     }
 }
 
-/* Mobile */
 @media (max-width: 600px) {
     .hero-content h1 {
         font-size: 2.5rem;

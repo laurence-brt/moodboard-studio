@@ -2,50 +2,51 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="Moodboard Studio - Studio créatif spécialisé en branding & design"/>
+    <meta name="description" content=""/>
     <title>Moodboard Studio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
     <link rel="stylesheet" href="style.css"/>
+
 </head>
 
 <body>
-    <!-- NAVIGATION (Pure CSS - sans JavaScript) -->
     <nav class="navbar">
         <div class="logo">
-            <a href="index.html">
-                <img src="./img/logo/Logo_MOODBOARD_Studio_marron.png" alt="Moodboard Studio">
-            </a>
+         <a href="index.html"><img src="./img/logo/Logo_MOODBOARD_Studio_marron.png" alt="Moodboard Studio"></a>
         </div>
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label for="menu-toggle" class="togglebtn">
+        <div class="togglebtn" id="toggleBtn">
             <span></span>
             <span></span>
             <span></span>
-        </label>
-        <ul class="nav-links">
+          
+        </div>
+        <ul class="nav-links" id="navLinks">
             <li><a href="index.html">ACCUEIL</a></li>
-            <li><a href="A propos.html">À PROPOS</a></li>
+            <li><a href="A propos.html">A PROPOS</a></li>
             <li><a href="services.html">SERVICES</a></li>
             <li><a href="portfolio.html">PORTFOLIO</a></li>
             <li><a href="contact.html">CONTACT</a></li>
         </ul>
+
     </nav>
 
-    <!-- HERO SLIDER -->
     <section class="hero-slider">
         <!-- Slide 1 -->
         <div class="slide slide-1 active">
             <div class="slide-image">
-                <img src="./img/Picture_ 1.jpeg" alt="Branding & Design">
+                <img src="./img/Picture_ 1.jpeg" alt="moodboard">
             </div>
             <div class="slide-content">
                 <div class="slide-number">01</div>
                 <h1>Branding<br>& Design</h1>
-                <p>Nous créons des identités visuelles uniques qui captivent et inspirent votre audience.</p>
-                <a href="services.html" class="portfolio-btn">
-                    <span>Découvrir</span>
-                    <span class="portfolio-btn-arrow">→</span>
+                <p>Créons des identités visuelles uniques qui captivent et inspirent votre audience.</p>
+               <a href="services.html" class="portfolio-btn">
+                     <span>Découvrir</span>
+                     <span class="portfolio-btn-arrow">→</span>
                 </a>
             </div>
         </div>
@@ -53,7 +54,7 @@
         <!-- Slide 2 -->
         <div class="slide slide-2">
             <div class="slide-image">
-                <img src="./img/picture_2.jpeg" alt="Web Design">
+                <img src="./img/picture_2.jpeg" alt="web design">
             </div>
             <div class="slide-content">
                 <div class="slide-number">02</div>
@@ -69,7 +70,7 @@
         <!-- Slide 3 -->
         <div class="slide slide-3">
             <div class="slide-image">
-                <img src="./img/picture_3.jpeg" alt="Création de Contenu">
+                <img src="./img/picture_3.jpeg" alt="Création">
             </div>
             <div class="slide-content">
                 <div class="slide-number">03</div>
@@ -82,64 +83,59 @@
             </div>
         </div>
 
-        <!-- Navigation Arrows -->
         <div class="slider-nav">
-            <a href="#slide1" class="slider-arrow up"></a>
-            <a href="#slide2" class="slider-arrow down"></a>
+            <div class="slider-arrow up" id="prevSlide"></div>
+            <div class="slider-arrow down" id="nextSlide"></div>
         </div>
 
-        <!-- Dots Navigation -->
         <div class="slider-dots">
-            <a href="#slide1" class="dot active"></a>
-            <a href="#slide2" class="dot"></a>
-            <a href="#slide3" class="dot"></a>
+            <div class="dot active" data-slide="1"></div>
+            <div class="dot" data-slide="2"></div>
+            <div class="dot" data-slide="3"></div>
         </div>
     </section>
 
-    <!-- LOGOS SECTION -->
     <section class="logos-section">
         <div class="logos-grid">
             <div class="logo-item">WEB DESIGNER</div>
-            <div class="logo-item">UX/UI DESIGNER</div>
+            <div class="logo-item">UX /UI DESIGNER</div>
             <div class="logo-item">BRAND DESIGNER</div>
         </div>
     </section>
 
-    <!-- INTRO SECTION -->
     <section class="intro-section">
         <div class="intro-content">
             <h2>Studio créatif spécialisé en branding & design</h2>
-            <p>Nous donnons vie à votre identité visuelle et faisons rayonner votre marque avec style et impact.</p>
-            <p>Notre équipe transforme vos idées en marques iconiques qui captivent votre audience et renforcent votre présence sur le marché.</p>
+            <p>Donnez vie à votre identité visuelle et faisons rayonner votre marque avec style et impact.</p>
+            <p>Transformons vos idées en marques iconiques qui captivent votre audience et renforcent votre présence sur le marché.</p>
         </div>
         <div class="image-grid">
-            <div class="image-box"><img src="./img/image00.png" alt="Design 1"></div>
-            <div class="image-box"><img src="./img/image_02.png" alt="Design 2"></div>
-            <div class="image-box"><img src="./img/image_03.png" alt="Design 3"></div>
+            <div class="image-box"><img src="./img/image00.png"></div>
+            <div class="image-box all"><img src="./img/image_02.png"></div>
+            <div class="image-box"><img src="./img/image_03.png"></div>
         </div>
     </section>
 
-    <!-- SERVICES SECTION -->
-    <section class="services-section">
+    <section class="services-section" id="services">
         <h2 class="section-title">Transformer les défis en opportunités</h2>
         <div class="services-grid">
             <div class="service-card">
                 <div class="service-icon">
-                    <img src="./img/Picture_01.png" alt="Web Design">
+                  <img src="./img/Picture_01.png">
                 </div>
                 <h3>Web Design</h3>
-                <p>Nous concevons des sites web modernes, élégants et performants qui reflètent l'essence de votre marque. Chaque détail est pensé pour captiver vos visiteurs.</p>
+                <p>Concevoir des sites web modernes, élégants et performants qui reflètent l'essence de votre marque. Chaque détail est pensé pour captiver vos visiteurs.</p>
             </div>
             <div class="service-card">
                 <div class="service-icon">
-                    <img src="./img/Picture_02.png" alt="Branding">
+                  <img src="./img/Picture_02.png" alt="">
                 </div>
                 <h3>Branding</h3>
-                <p>Nous créons une identité visuelle forte, cohérente et alignée à votre vision. Du logo à l'univers graphique complet, votre marque se démarque.</p>
+                <p>Créer une identité visuelle forte, cohérente et alignée à votre vision. Du logo à l'univers graphique complet, votre marque se démarque.</p>
             </div>
             <div class="service-card">
                 <div class="service-icon">
-                    <img src="./img/Picture_03.png" alt="Contenu">
+                  <img src="./img/Picture_03.png" alt="">
                 </div>
                 <h3>Création de Contenu</h3>
                 <p>Des contenus visuels percutants qui racontent l'histoire de votre marque et captent l'attention de votre audience sur tous les supports digitaux.</p>
@@ -147,7 +143,6 @@
         </div>
     </section>
 
-    <!-- QUOTE SECTION -->
     <section class="quote-section">
         <blockquote>
             "Un bon branding ne dit pas seulement qui vous êtes,<br>
@@ -155,9 +150,10 @@
         </blockquote>
     </section>
 
-    <!-- PORTFOLIO SECTION -->
+   
+ <!-- PORTFOLIO SECTION -->
     <section class="portfolio-section">
-        <h2 class="section-title">Notre créativité en action</h2>
+        <h2 class="section-title"> Créativité en action</h2>
         
         <div class="portfolio-slider-wrapper">
             <div class="portfolio-cards">
@@ -174,8 +170,8 @@
 
                 <!-- Card 2 -->
                 <div class="portfolio-card">
-                    <a href="#" class="project-link">
-                        <img src="./img/Festival_afro_caribéen.jpg" alt="Festival Afro-Caribéen" class="card-image">
+                    <a href="projet_Festival_Afro_Caribéen.html" class="project-link">
+                        <img src="./img/Festival_afro_caribéen.jpg" alt="Festival Afro Caribéen" class="card-image">
                         <div class="card-overlay">
                             <div class="card-name">Festival Afro-Caribéen</div>
                             <div class="card-category">Identité Visuelle</div>
@@ -189,7 +185,7 @@
                         <img src="./img/cognitive_balance.png" alt="Cognitive Balance" class="card-image">
                         <div class="card-overlay">
                             <div class="card-name">Cognitive Balance</div>
-                            <div class="card-category">Web Design</div>
+                            <div class="card-category">Design UX - UI application mobile</div>
                         </div>
                     </a>
                 </div>
@@ -228,7 +224,7 @@
         </a>
     </section>
 
-    <!-- FOOTER -->
+  <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-logo">
@@ -252,5 +248,25 @@
             </div>
         </div>
     </footer>
+
+          <script src="script.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+          
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+          

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="projet_Template_Home_Interior.css"/>
 
 </head>
@@ -60,8 +61,8 @@
                     <p>UX/UI Designer • Webdesigner</p>
                 </div>
                 <div class="context-item">
-                    <h3>Durée</h3>
-                    <p>Projet personnel • 2024</p>
+                    <h3>ANNÉE</h3>
+                    <p>Projet personnel • 2025</p>
                 </div>
             </div>
         </div>
@@ -110,7 +111,6 @@
 
     <!-- MOCKUPS -->
     <section class="mockups">
-        <!-- Mockups flottants -->
         <div class="background-mockups">
             <div class="floating-mockup mockup-float-1">
                 <img src="./img/template home interior/Projet 1/4 UX@2x.png" alt="Page À propos">
@@ -127,25 +127,37 @@
             <div class="floating-mockup mockup-float-4">
                 <img src="./img/template home interior/Projet 4/4 UX@2x.png" alt="Page Services">
             </div>
-        </div>
+            <div class="background-mockups">
+            <div class="floating-mockup mockup-float-1">
+                <img src="./img/template home interior/Projet 1/4 UX@2x.png" alt="Page À propos">
+            </div>
+
+            <div class="floating-mockup mockup-float-2">
+                <img src="./img/template home interior/Projet 2/4 UX@2x.png" alt="Page Contact">
+            </div>
+
+            <div class="floating-mockup mockup-float-3">
+                <img src="./img/template home interior/Projet 3/4 UX@2x.png" alt="Page d'accueil">
+            </div>
+
+            <div class="floating-mockup mockup-float-4">
+                <img src="./img/template home interior/Projet 4/4 UX@2x.png" alt="Page Services">
+            </div>
 
         <div class="container">
             <h2>Maquettes & Réalisations</h2>
             
             <div class="mockup-grid">
-                <!-- Page d'accueil -->
                 <div class="mockup-item mockup-full">
                     <img src="./img/template home interior/home interior@_home page.png" alt="Page d'accueil Home Interior">
                     <p class="mockup-caption">Page d'accueil - Hero avec tagline impactant</p>
                 </div>
 
-                <!-- À propos -->
                 <div class="mockup-item mockup-full">
                     <img src="./img/template home interior/A propos.png" alt="Page à propos">
                     <p class="mockup-caption">Page À propos - Présentation de la designer</p>
                 </div>
 
-                 <!-- Services -->
                 <div class="mockup-item mockup-full">
                     <img src="./img/template home interior/Projet 1/4@2x.png" alt="Page service1">
                     <p class="mockup-caption">Page Services - Mise en valeur des prestations 1</p>
@@ -166,7 +178,6 @@
                     <p class="mockup-caption">Page Services - Mise en valeur des prestations 4</p>
                 </div>
 
-                <!-- Contact -->
                 <div class="mockup-item mockup-full">
                     <img src="./img/template home interior/Contact@2x.png" alt="Page contact">
                     <p class="mockup-caption">Page Contact - Formulaire épuré et coordonnées</p>
@@ -214,22 +225,6 @@
             </a>
         </div>
     </footer>
-    <script>
-        // Menu hamburger toggle
-        const toggleBtn = document.getElementById('toggleBtn');
-        const navLinks = document.getElementById('navLinks');
-
-        toggleBtn.addEventListener('click', () => {
-            toggleBtn.classList.toggle('active');
-            navLinks.classList.toggle('active');
-        });
-
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                toggleBtn.classList.remove('active');
-                navLinks.classList.remove('active');
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
