@@ -197,6 +197,7 @@ body {
     cursor: pointer;
     position: relative;
     transition: all 0.3s;
+    background: transparent;
 }
 
 .slider-arrow::before {
