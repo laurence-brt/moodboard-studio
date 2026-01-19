@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content=""/>
-    <title>Moodboard Studio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+    <title>Projet Barbie</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
     <link rel="stylesheet" href="projet_barbie.css"/>
 
 </head>
@@ -34,29 +33,125 @@
         </ul>
     </nav>
 
-   <section class="error-section">
-        <div class="error-bg-shape shape-1"></div>
-        <div class="error-bg-shape shape-2"></div>
+    <!-- HERO PARALLAX -->
+    <section class="hero-parallax">
+        <div class="hero-background">
+            <img src="./img/Barbie/barbie.png" alt="Barbie Campaign">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>BARBIE</h1>
+            <p class="subtitle">Campagne Publicitaire</p>
+        </div>
+    </section>
 
-        <div class="error-container">
-            <h1 class="error-code">404</h1>
-            <h2 class="error-title">Page en cours de construction</h2>
-            <p class="error-message">
-               Je travaille actuellement sur ce projet pour vous le présenter sous son meilleur jour. Revenez bientôt pour découvrir cette création !
-            </p>
+    <!-- MOODBOARD SECTION -->
+    <section class="moodboard-section">
+        <div class="container">
+            <h2 class="moodboard-title">Barbie Campaign</h2>
+            <p class="moodboard-subtitle">Campagne Publicitaire Urbaine</p>
+            
+            <div class="color-palette">
+                <p class="palette-title">Palette de Couleurs</p>
+                <div class="color-swatches">
+                    <div class="color-swatch">
+                        <div class="color-circle" style="background: #FF69B4;"></div>
+                        <p class="color-code">#FF69B4</p>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-circle" style="background: #BA55D3;"></div>
+                        <p class="color-code">#BA55D3</p>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-circle" style="background: #00CED1;"></div>
+                        <p class="color-code">#00CED1</p>
+                    </div>
+                </div>
+            </div>
 
-            <div class="error-buttons">
-                <a href="./index.html" class="btn-primary">
-                    <span>Retour à l'accueil</span>
-                    <span class="btn-arrow">→</span>
-                </a>
-                <a href="./contact.html" class="btn-secondary">
-                    <span>Nous contacter</span>
-                    <span class="btn-arrow">→</span>
-                </a>
+            <!-- Contexte -->
+            <div class="context-inline">
+                <div class="context-item">
+                    <h3>TYPE</h3>
+                    <p>Campagne publicitaire<br>Affichage urbain & Digital</p>
+                </div>
+                <div class="context-item">
+                    <h3>RÔLE</h3>
+                    <p>Designer graphique</p>
+                </div>
+                <div class="context-item">
+                    <h3>ANNÉE</h3>
+                    <p>Projet personnel • 2024</p>
+                </div>
             </div>
         </div>
     </section>
+
+    <!-- SCROLL -->
+    <section class="horizontal-scroll-section">
+        <h2>Déclinaisons & Contextes</h2>
+        <div class="horizontal-scroll">
+            <div class="scroll-item">
+                <img src="./img/Barbie/mockup barbie.jpg" alt="Mockup métro">
+                <p>Écran métro - Impact visuel dans les transports en commun</p>
+            </div>
+            <div class="scroll-item">
+                <img src="./img/Barbie/mockup train station barbie.png" alt="Mockup urbain">
+                <p>Billboard urbain - Affichage grand format dans l'espace public</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="challenge-solution">
+        <div class="container">
+            <div class="challenge-box">
+                <h2>Le défi</h2>
+                <p>
+                    Créer une campagne publicitaire audacieuse et inspirante pour célébrer l'empowerment féminin à travers l'univers iconique de Barbie. Le design devait capter l'attention dans l'espace urbain tout en transmettant un message fort et positif d'affirmation de soi et de confiance.
+                </p>
+            </div>
+
+            <div class="solution-box">
+                <h2>La solution</h2>
+                <ul class="solution-list">
+                    <li>Typographie bold et impactante avec le mot "BARBIE" en lettres holographiques 3D pour un effet visuel saisissant</li>
+                    <li>Mise en scène dynamique d'une athlète en pole dance symbolisant la force, la grâce et l'empowerment</li>
+                    <li>Message motivationnel "YOU ARE A QUEEN" créant une connexion émotionnelle immédiate</li>
+                    <li>Palette de couleurs vibrantes rose hot et cyan créant un contraste maximal dans l'environnement urbain</li>
+                    <li>Déclinaisons adaptées aux différents supports : billboard extérieur, écrans métro, affichage digital urbain</li>
+                    <li>Design optimisé pour la visibilité à distance et l'impact visuel instantané</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- MOCKUPS ITEMS -->
+    <section class="mockups-items">
+        <div class="container">
+            <h2>Mockups </h2>
+            <div class="mockups-grid">
+                <div class="mockups-item large" onclick="openModal('img1')">
+                    <img id="img1" src="./img/Barbie/barbie.png" alt="Design original">
+                    <div class="mockups-caption">
+                        <p>Design original - Visuel principal de la campagne</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECHNOLOGIES -->
+    <section class="techs">
+        <div class="container">
+            <h3>Compétences</h3>
+            <div class="tech-list">
+                <span class="tech-tag">Adobe Photoshop</span>
+                <span class="tech-tag">Design Publicitaire</span>
+                <span class="tech-tag">Typographie 3D</span>
+            </div>
+        </div>
+    </section>
+
      <!-- FOOTER -->
     <footer>
         <div class="footer-projects-split">

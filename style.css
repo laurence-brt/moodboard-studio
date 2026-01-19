@@ -145,6 +145,11 @@ body {
     z-index: 10;
     max-width: 600px;
 }
+.slide-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 
 .slide-number {
     position: absolute;
@@ -180,6 +185,11 @@ body {
     color: white;
     text-shadow: 1px 1px 10px rgba(0,0,0,0.5);
 }
+
+.slide-content span{
+    color: white;
+}
+
 .slider-nav {
     position: absolute;
     left: 80px;
@@ -197,7 +207,7 @@ body {
     cursor: pointer;
     position: relative;
     transition: all 0.3s;
-    background: transparent;
+    display: none;
 }
 
 .slider-arrow::before {
@@ -754,6 +764,10 @@ body {
         right: 20px;
         bottom: 20px;
     }
+
+    .intro-content h2{
+        margin-top: -43px;
+    }
     
     .intro-section,
     .services-grid {
@@ -762,6 +776,10 @@ body {
     
     .portfolio-section {
         padding: 80px 30px;
+    }
+
+    .card-overlay .card-name {
+        font-size: 25px;
     }
 
     .section-title {

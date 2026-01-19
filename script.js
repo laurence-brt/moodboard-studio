@@ -34,46 +34,37 @@ function nextSlide() {
     showSlide(currentSlide + 1);
 }
 
-function prevSlide() {
-    showSlide(currentSlide - 1);
-}
-
-// Arrow navigation
-document.getElementById('nextSlide').addEventListener('click', nextSlide);
-document.getElementById('prevSlide').addEventListener('click', prevSlide);
-
-// Dot navigation
+// ✅ Navigation par DOTS (cliquables)
 dots.forEach((dot, index) => {
     dot.addEventListener('click', () => showSlide(index));
 });
 
-// Auto slide
-setInterval(nextSlide, 5000);
+// ✅ Auto-slide qui passe au slide suivant automatiquement
+setInterval(nextSlide, 5000); // Change toutes les 5 secondes
 
-// Keyboard navigation
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowDown' || e.key === 'ArrowRight') nextSlide();
-    if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') prevSlide();
-});
+// ❌ SUPPRIMÉ : Arrow navigation
+// ❌ SUPPRIMÉ : Keyboard navigation
 
 // PORTFOLIO SLIDER
 const portfolioCards = document.getElementById('portfolioCards');
 const prevBtn = document.querySelector('.slider-nav-btn.prev');
 const nextBtn = document.getElementById('nextBtn');
 
-let scrollPosition = 0;
-const cardWidth = 160; // 150px width + 10px gap
+if (portfolioCards && nextBtn && prevBtn) {
+    let scrollPosition = 0;
+    const cardWidth = 160; // 150px width + 10px gap
 
-nextBtn.addEventListener('click', () => {
-    const maxScroll = portfolioCards.scrollWidth - portfolioCards.parentElement.offsetWidth;
-    scrollPosition = Math.min(scrollPosition + cardWidth, maxScroll);
-    portfolioCards.style.transform = `translateX(-${scrollPosition}px)`;
-});
+    nextBtn.addEventListener('click', () => {
+        const maxScroll = portfolioCards.scrollWidth - portfolioCards.parentElement.offsetWidth;
+        scrollPosition = Math.min(scrollPosition + cardWidth, maxScroll);
+        portfolioCards.style.transform = `translateX(-${scrollPosition}px)`;
+    });
 
-prevBtn.addEventListener('click', () => {
-    scrollPosition = Math.max(scrollPosition - cardWidth, 0);
-    portfolioCards.style.transform = `translateX(-${scrollPosition}px)`;
-});
+    prevBtn.addEventListener('click', () => {
+        scrollPosition = Math.max(scrollPosition - cardWidth, 0);
+        portfolioCards.style.transform = `translateX(-${scrollPosition}px)`;
+    });
+}
 
 // Animation au scroll
 const observer = new IntersectionObserver((entries) => {

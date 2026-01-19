@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content=""/>
-    <title>Moodboard Studio</title>
+    <title>Projet Festival afro caribéen</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
@@ -38,7 +38,7 @@
     <!-- HERO IMMERSIVE AVEC PARALLAX -->
     <section class="hero-parallax">
         <div class="hero-background">
-            <img src="./img/Festival_afro_caribeen.png" alt="Festival afro-caribéen">
+            <img src="./img/Festival_afro_caribeen.jpeg" alt="Festival afro-caribéen">
         </div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
@@ -101,7 +101,7 @@
                 <img src="./img/pexels-aog-pixels-263452684-14005955.jpg" alt="image d'origine">
             </div>
             <div class="scroll-item">
-                <img src=".img/Festival_afro_caribeen.png" alt="résultat image">
+                <img src="./img/Festival_afro_caribeen.jpeg" alt="Festival afro-caribeen">
             </div>
         </div>
     </section>
@@ -134,33 +134,41 @@
         <div class="container">
             <h2>Déclinaisons & Mockups</h2>
             <div class="mockups-grid">
-                <div class="mockups-item large">
-                    <img src="./img/K8w40o7JY.png" alt="Billboard extérieur">
+                <div class="mockups-item large" onclick="openModal('img1')">
+                    <img id="img1" src="./img/K8w40o7JY.png" alt="Billboard extérieur">
                     <div class="mockups-caption">
                         <p>Billboard extérieur - Impact visuel maximal dans l'espace urbain</p>
                     </div>
                 </div>
-                <div class="mockups-item">
-                    <img src="./img/Blue and Pink Soft Magazine Cover Mockup Instagram Post.jpg" alt="Tote bag merchandising">
+                <div class="mockups-item" onclick="openModal('img2')">
+                    <img id="img2" src="./img/Billet Concert Musique Moderne Rose Violet Noir - 1.jpg" alt="Billet événement recto">
+                    <div class="mockups-caption">
+                        <p>Billet événement - (1)Design recto avec infos pratiques</p>
+                    </div>
+                </div>
+                <div class="mockups-item" onclick="openModal('img3')">
+                    <img id="img3" src="./img/Billet Concert Musique Moderne Rose Violet Noir - 2.jpg" alt="Billet événement verso">
+                    <div class="mockups-caption">
+                        <p>Billet événement - (2)Design recto avec infos pratiques</p>
+                    </div>
+                </div>
+                <div class="mockups-item large" onclick="openModal('img4')">
+                    <img id="img4" src="./img/Blue and Pink Soft Magazine Cover Mockup Instagram Post.jpg" alt="Tote bag merchandising">
                     <div class="mockups-caption">
                         <p>Tote bag merchandising - Goodies festival</p>
-                    </div>
-                </div>
-                <div class="mockups-item">
-                    <img src="./img/Billet Concert Musique Moderne Rose Violet Noir - 1.jpg" alt="Billet événement">
-                    <div class="mockups-caption">
-                        <p>Billet événement - Design recto avec infos pratiques</p>
-                    </div>
-                </div>
-                <div class="mockups-item">
-                    <img src="./img/Billet Concert Musique Moderne Rose Violet Noir - 2.jpg" alt="Billet événement">
-                    <div class="mockups-caption">
-                        <p>Billet événement - Design recto avec infos pratiques</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- MODALE -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close-btn">&times;</span>
+        <div class="modal-content">
+            <img id="modal-img" src="" alt="">
+        </div>
+    </div>
 
     <!-- TECHNOLOGIES -->
     <section class="techs">
@@ -198,5 +206,38 @@
         </div>
     </footer>
     <script src="script.js"></script>
+    <script>
+        // Fonction pour ouvrir la modale
+        function openModal(imageId) {
+            // Récupère l'image cliquée
+            var img = document.getElementById(imageId);
+            // Récupère la modale
+            var modal = document.getElementById('modal');
+            // Récupère l'image dans la modale
+            var modalImg = document.getElementById('modal-img');
+            
+            // Affiche la modale
+            modal.classList.add('show');
+            // Met l'image dans la modale
+            modalImg.src = img.src;
+            // Bloque le scroll de la page
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Fonction pour fermer la modale
+        function closeModal() {
+            var modal = document.getElementById('modal');
+            modal.classList.remove('show');
+            // Réactive le scroll
+            document.body.style.overflow = 'auto';
+        }
+
+        // Fermer avec la touche Échap
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
   </body>
 </html>
