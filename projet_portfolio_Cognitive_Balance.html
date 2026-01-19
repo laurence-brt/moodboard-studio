@@ -383,35 +383,6 @@
 
     <script>
 
-        // Image zoom functionality
-        const modal = document.getElementById('imageModal');
-        const modalImg = document.getElementById('modalImage');
-        const zoomableImages = document.querySelectorAll('.zoomable, .zoomable-mockup');
-        const closeModal = document.querySelector('.close-modal');
-
-        zoomableImages.forEach(img => {
-            img.addEventListener('click', function() {
-                modal.classList.add('active');
-                modalImg.src = this.src;
-            });
-        });
-
-        closeModal.addEventListener('click', () => {
-            modal.classList.remove('active');
-        });
-
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) {
-                modal.classList.remove('active');
-            }
-        });
-
-        // Close modal with ESC key
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && modal.classList.contains('active')) {
-                modal.classList.remove('active');
-            }
-        });
     </script>
 </body>
 </html>

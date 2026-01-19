@@ -257,7 +257,6 @@ color: #1A1A1A;
 font-family: 'Courier New', monospace;
 }
 
-/* Contexte */
 .context-inline {
 max-width: 1000px;
 margin: 4rem auto;
@@ -488,7 +487,6 @@ text-align: center;
 margin: 0;
 }
 
-/* MODALE */
 .modal {
 display: none;
 position: fixed;
@@ -531,7 +529,7 @@ cursor: pointer;
 color: #FF69B4;
 }
 
-/* TECHS SECTION */
+/* TECHS */
 .techs {
 padding: 4rem 2rem;
 background: #FFF0F5;
@@ -797,11 +795,11 @@ footer p {
     }
 
     .hero-parallax {
-        height: 60vh;
+        height: 64vh;
     }
 
     .hero-background {
-        height: 60vh;
+        height: 64vh;
     }
 
     .hero-content h1 {
@@ -837,7 +835,6 @@ footer p {
     }
 }
 
-/* PETIT MOBILE */
 @media (max-width: 480px) {
     .hero-parallax {
         height: 50vh;
